@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Arturo's Party Hub 🎉",
+    "description": "Celebrating every milestone with Arturo!"
+  },
+  "home": {
+    "hero": {
+      "title": "Arturo's Parties",
+      "subtitle": "Celebrating every magical milestone with our little adventurer"
+    },
+    "about": {
+      "title": "About Our Little Star",
+      "description": "<name>Arturo</name> is our bundle of joy, and each party marks another beautiful chapter in his journey. From his first steps to his biggest dreams, we celebrate every moment with love and adventure!"
+    },
+    "footer": "Made with 💖 for Arturo"
+  },
+  "parties": {
+    "onePiece": {
+      "badge": "1st Birthday",
+      "title": "One Piece Adventure",
+      "subtitle": "Set sail on a grand adventure! Join Captain Arturo on his first voyage.",
+      "cta": "Explore the party"
+    },
+    "comingSoon": {
+      "badge": "Coming Soon",
+      "title": "Next Adventure",
+      "subtitle": "The next chapter of Arturo's adventures is being planned...",
+      "cta": "Stay tuned"
+    }
+  },
+  "onePiecePage": {
+    "meta": {
+      "title": "Arturo's One Piece Adventure 🏴‍☠️ | 1st Birthday",
+      "description": "Join Captain Arturo on his grand adventure - celebrating his 1st birthday One Piece style!"
+    },
+    "backButton": "Back to Hub",
+    "hero": {
+      "title": "Captain Arturo's",
+      "subtitle": "Grand Adventure!",
+      "description": "Setting sail on an epic journey to celebrate the first year! 🌊"
+    },
+    "details": {
+      "title": "Party Details",
+      "location": {
+        "label": "Location",
+        "value": "The Grand Line (Details to be announced)"
+      },
+      "time": {
+        "label": "Time",
+        "value": "Adventure begins soon!"
+      },
+      "dressCode": {
+        "label": "Dress Code",
+        "value": "Pirate attire encouraged! 🏴‍☠️"
+      }
+    },
+    "treasure": {
+      "title": "The One Piece Awaits!",
+      "description": "Every pirate knows the real treasure is the journey and the crew. Join us as Arturo begins his legendary adventure!"
+    },
+    "firstYear": {
+      "title": "🌟 Arturo's First Year 🌟",
+      "birthday": "1st Birthday",
+      "dreams": "Infinite Dreams",
+      "love": "So Much Love",
+      "future": "Bright Future"
+    },
+    "crewMessage": "Arturo's Pirate Crew welcomes you!"
+  },
+  "comingSoonPage": {
+    "meta": {
+      "title": "Coming Soon | Arturo's Next Adventure",
+      "description": "Something amazing is being planned for Arturo's next celebration!"
+    },
+    "backButton": "Back to Hub",
+    "title": "Coming Soon",
+    "subtitle": "Arturo's next adventure is being planned in secret...",
+    "mystery": {
+      "title": "What could it be?",
+      "description": "A dinosaur dig? A space expedition? A magical kingdom? The theme for Arturo's next celebration is still a mystery! Check back soon for the big reveal."
+    },
+    "stayTuned": "Stay Tuned",
+    "footer": "More adventures await for Arturo ✨"
+  },
+  "common": {
+    "languageSwitch": "Switch language"
+  }
+}
+

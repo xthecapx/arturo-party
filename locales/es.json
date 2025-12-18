@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Las Fiestas de Arturo 🎉",
+    "description": "¡Celebrando cada momento especial con Arturo!"
+  },
+  "home": {
+    "hero": {
+      "title": "Las Fiestas de Arturo",
+      "subtitle": "Celebrando cada momento mágico con nuestro pequeño aventurero"
+    },
+    "about": {
+      "title": "Sobre Nuestra Estrellita",
+      "description": "<name>Arturo</name> es nuestra alegría, y cada fiesta marca otro hermoso capítulo en su viaje. ¡Desde sus primeros pasos hasta sus más grandes sueños, celebramos cada momento con amor y aventura!"
+    },
+    "footer": "Hecho con 💖 para Arturo"
+  },
+  "parties": {
+    "onePiece": {
+      "badge": "1er Cumpleaños",
+      "title": "Aventura One Piece",
+      "subtitle": "¡Zarpa en una gran aventura! Únete al Capitán Arturo en su primer viaje.",
+      "cta": "Explorar la fiesta"
+    },
+    "comingSoon": {
+      "badge": "Próximamente",
+      "title": "Próxima Aventura",
+      "subtitle": "El próximo capítulo de las aventuras de Arturo se está planeando...",
+      "cta": "Mantente atento"
+    }
+  },
+  "onePiecePage": {
+    "meta": {
+      "title": "La Aventura One Piece de Arturo 🏴‍☠️ | 1er Cumpleaños",
+      "description": "¡Únete al Capitán Arturo en su gran aventura - celebrando su primer cumpleaños al estilo One Piece!"
+    },
+    "backButton": "Volver al Inicio",
+    "hero": {
+      "title": "¡La Gran Aventura",
+      "subtitle": "del Capitán Arturo!",
+      "description": "¡Zarpando en un viaje épico para celebrar el primer año! 🌊"
+    },
+    "details": {
+      "title": "Detalles de la Fiesta",
+      "location": {
+        "label": "Ubicación",
+        "value": "El Grand Line (Detalles por anunciar)"
+      },
+      "time": {
+        "label": "Hora",
+        "value": "¡La aventura comienza pronto!"
+      },
+      "dressCode": {
+        "label": "Código de Vestimenta",
+        "value": "¡Se recomienda vestimenta pirata! 🏴‍☠️"
+      }
+    },
+    "treasure": {
+      "title": "¡El One Piece Espera!",
+      "description": "Todo pirata sabe que el verdadero tesoro es el viaje y la tripulación. ¡Únete a nosotros mientras Arturo comienza su aventura legendaria!"
+    },
+    "firstYear": {
+      "title": "🌟 El Primer Año de Arturo 🌟",
+      "birthday": "1er Cumpleaños",
+      "dreams": "Sueños Infinitos",
+      "love": "Mucho Amor",
+      "future": "Futuro Brillante"
+    },
+    "crewMessage": "¡La Tripulación Pirata de Arturo te da la bienvenida!"
+  },
+  "comingSoonPage": {
+    "meta": {
+      "title": "Próximamente | La Próxima Aventura de Arturo",
+      "description": "¡Algo increíble se está planeando para la próxima celebración de Arturo!"
+    },
+    "backButton": "Volver al Inicio",
+    "title": "Próximamente",
+    "subtitle": "La próxima aventura de Arturo se está planeando en secreto...",
+    "mystery": {
+      "title": "¿Qué será?",
+      "description": "¿Una excavación de dinosaurios? ¿Una expedición espacial? ¿Un reino mágico? ¡El tema de la próxima celebración de Arturo sigue siendo un misterio! Vuelve pronto para el gran reveal."
+    },
+    "stayTuned": "Mantente Atento",
+    "footer": "Más aventuras esperan a Arturo ✨"
+  },
+  "common": {
+    "languageSwitch": "Cambiar idioma"
+  }
+}
+
