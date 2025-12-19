@@ -13,6 +13,7 @@ interface ActivityCardProps {
   onPrev: () => void;
   hasNext: boolean;
   hasPrev: boolean;
+  crewIcon?: string;
 }
 
 export function ActivityCard({
@@ -25,6 +26,7 @@ export function ActivityCard({
   onPrev,
   hasNext,
   hasPrev,
+  crewIcon,
 }: ActivityCardProps) {
   const [showMaterials, setShowMaterials] = useState(false);
   const [showTips, setShowTips] = useState(false);
@@ -53,7 +55,8 @@ export function ActivityCard({
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-        <div className="text-white text-sm font-medium">
+        <div className="text-white text-sm font-medium flex items-center gap-2">
+          {crewIcon && <span>{crewIcon}</span>}
           {activityNumber} / {totalActivities}
         </div>
         <button 

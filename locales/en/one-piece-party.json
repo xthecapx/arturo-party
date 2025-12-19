@@ -732,22 +732,22 @@
   },
   "guestList": {
     "summary": {
-      "totalAdults": 12,
+      "totalAdults": 19,
       "totalChildren": 15
     },
     "guests": [
       { "name": "Celeste / Agustín", "adults": 2, "children": 5, "contact": "Tony / Liz" },
-      { "name": "Helena", "adults": 0, "children": 1, "contact": "" },
-      { "name": "Arturo / Nico", "adults": 0, "children": 2, "contact": "" },
-      { "name": "Violeta", "adults": 0, "children": 1, "contact": "" },
+      { "name": "Helena", "adults": 2, "children": 1, "contact": "Guillermo / xxxxx" },
+      { "name": "Arturo / Nico", "adults": 1, "children": 2, "contact": "Kerstin" },
+      { "name": "Valeria", "adults": 1, "children": 1, "contact": "Juliana" },
+      { "name": "Violeta", "adults": 1, "children": 1, "contact": "Xxxxx" },
       { "name": "Julio / Nacho", "adults": 2, "children": 2, "contact": "Lili / Fabio" },
-      { "name": "Mateo", "adults": 1, "children": 1, "contact": "Jose Luis" },
-      { "name": "Sebas", "adults": 0, "children": 1, "contact": "" },
+      { "name": "Matteo", "adults": 1, "children": 1, "contact": "Jose Luis" },
+      { "name": "Sebas", "adults": 2, "children": 1, "contact": "Liz / Miguel" },
       { "name": "Simon", "adults": 2, "children": 1, "contact": "Roger / Karen" },
-      { "name": "Maite's Child", "adults": 1, "children": 1, "contact": "Maite" },
-      { "name": "Luis / Aura", "adults": 2, "children": 0, "contact": "" },
-      { "name": "Mrs. Gloria", "adults": 1, "children": 0, "contact": "" },
-      { "name": "Gloria", "adults": 1, "children": 0, "contact": "" }
+      { "name": "Grandpa Luis / Grandma Aura", "adults": 2, "children": 0, "contact": "" },
+      { "name": "Mrs. Gloria and daughter", "adults": 2, "children": 0, "contact": "" },
+      { "name": "Aunt Gloria", "adults": 1, "children": 0, "contact": "" }
     ]
   },
   "printables": {

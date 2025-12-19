@@ -30,6 +30,22 @@ export default async function OnePiecePartyPage({ params }: Props) {
   // Count total activities across all phases
   const totalActivities = party.phases.reduce((acc, phase) => acc + phase.activities.length, 0);
 
+  const t = {
+    back: locale === "es" ? "Volver" : "Back",
+    activities: locale === "es" ? "actividades" : "activities",
+    route: locale === "es" ? "Ruta del Grand Line" : "Grand Line Route",
+    selectCrew: locale === "es" ? "SELECCIONA TU TRIPULACIÓN" : "SELECT YOUR CREW",
+    crewMeet: locale === "es" 
+      ? "¡Ambas tripulaciones se encontrarán en la actividad final para formar las siglas AMG!" 
+      : "Both crews will meet at the final activity to form the AMG initials!",
+    startAs: locale === "es" ? "COMENZAR COMO" : "START AS",
+    materials: locale === "es" ? "Materiales" : "Materials",
+    guests: locale === "es" ? "Invitados" : "Guests",
+    phases: locale === "es" ? "Fases de la Aventura" : "Adventure Phases",
+    strawHatRoute: locale === "es" ? "Ruta: 1→2→3→...→10→Final" : "Route: 1→2→3→...→10→Finale",
+    heartRoute: locale === "es" ? "Ruta: 10→9→8→...→1→Final" : "Route: 10→9→8→...→1→Finale",
+  };
+
   return (
     <main className="min-h-dvh relative overflow-hidden" style={{
       background: "linear-gradient(180deg, #0c4a6e 0%, #0369a1 30%, #0ea5e9 70%, #7dd3fc 100%)"
@@ -63,11 +79,11 @@ export default async function OnePiecePartyPage({ params }: Props) {
           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
-          <span className="font-medium">{locale === "es" ? "Volver" : "Back"}</span>
+          <span className="font-medium">{t.back}</span>
         </Link>
 
         {/* Hero section */}
-        <header className="text-center mb-8 animate-fade-in">
+        <header className="text-center mb-6 animate-fade-in">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-full shadow-2xl mb-4">
             <span className="text-4xl">👒</span>
           </div>
@@ -80,27 +96,72 @@ export default async function OnePiecePartyPage({ params }: Props) {
         </header>
 
         {/* Stats badges */}
-        <div className="flex justify-center gap-3 mb-8 animate-fade-in delay-100">
+        <div className="flex justify-center gap-3 mb-6 animate-fade-in delay-100">
           <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm">
-            <span className="font-semibold">{totalActivities}</span> {locale === "es" ? "actividades" : "activities"}
+            <span className="font-semibold">{totalActivities}</span> {t.activities}
           </div>
           <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm">
             🕐 {party.meta.estimatedDuration}
           </div>
         </div>
 
+        {/* Crew Selection Section */}
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 mb-6 animate-fade-in delay-200">
+          <h2 className="text-white font-bold text-center text-lg mb-2 flex items-center justify-center gap-2">
+            <span>⚔️</span>
+            {t.selectCrew}
+            <span>⚔️</span>
+          </h2>
+          <p className="text-sky-200 text-xs text-center mb-4">
+            {t.crewMeet}
+          </p>
+          
+          {/* Crew Cards */}
+          <div className="grid grid-cols-2 gap-3">
+            {/* Straw Hat Crew */}
+            <Link 
+              href={`/${locale}/parties/one-piece/play?crew=straw-hat`}
+              className="group"
+            >
+              <div className="bg-gradient-to-br from-red-500/30 to-red-600/30 hover:from-red-500/50 hover:to-red-600/50 border-2 border-red-500/50 rounded-2xl p-4 text-center transition-all hover:-translate-y-1 hover:shadow-xl">
+                <div className="text-5xl mb-2 group-hover:scale-110 transition-transform">👒</div>
+                <h3 className="text-white font-bold text-sm mb-1">Straw Hat</h3>
+                <p className="text-red-200 text-[10px] mb-3">{t.strawHatRoute}</p>
+                <div className="bg-red-500 hover:bg-red-400 text-white text-xs font-bold py-2 px-3 rounded-lg transition-colors">
+                  {t.startAs} 👒
+                </div>
+              </div>
+            </Link>
+
+            {/* Heart Pirates */}
+            <Link 
+              href={`/${locale}/parties/one-piece/play?crew=heart-pirates`}
+              className="group"
+            >
+              <div className="bg-gradient-to-br from-yellow-500/30 to-yellow-600/30 hover:from-yellow-500/50 hover:to-yellow-600/50 border-2 border-yellow-500/50 rounded-2xl p-4 text-center transition-all hover:-translate-y-1 hover:shadow-xl">
+                <div className="text-5xl mb-2 group-hover:scale-110 transition-transform">💛</div>
+                <h3 className="text-white font-bold text-sm mb-1">Heart Pirates</h3>
+                <p className="text-yellow-200 text-[10px] mb-3">{t.heartRoute}</p>
+                <div className="bg-yellow-500 hover:bg-yellow-400 text-yellow-900 text-xs font-bold py-2 px-3 rounded-lg transition-colors">
+                  {t.startAs} 💛
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+
         {/* Progress Map Preview */}
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 mb-6 animate-fade-in delay-200">
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 mb-6 animate-fade-in delay-300">
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-white font-semibold flex items-center gap-2">
               <span>🗺️</span>
-              {locale === "es" ? "Ruta del Grand Line" : "Grand Line Route"}
+              {t.route}
             </h2>
           </div>
           
           {/* Phase indicators */}
           <div className="flex items-center gap-2">
-            {party.phases.map((phase, index) => (
+            {party.phases.map((phase) => (
               <div key={phase.id} className="flex-1">
                 <div 
                   className="h-2 rounded-full"
@@ -114,46 +175,27 @@ export default async function OnePiecePartyPage({ params }: Props) {
           </div>
         </div>
 
-        {/* Start Adventure Button */}
-        <Link 
-          href={`/${locale}/parties/one-piece/play`}
-          className="block w-full animate-fade-in delay-300"
-        >
-          <div className="bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-400 hover:from-amber-500 hover:via-yellow-500 hover:to-amber-500 text-amber-900 font-bold text-lg py-4 px-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5 text-center">
-            <span className="flex items-center justify-center gap-3">
-              <span className="text-2xl">▶️</span>
-              {locale === "es" ? "COMENZAR AVENTURA" : "START ADVENTURE"}
-            </span>
-          </div>
-        </Link>
-
         {/* Quick access buttons */}
-        <div className="grid grid-cols-2 gap-3 mt-4 animate-fade-in delay-400">
+        <div className="grid grid-cols-2 gap-3 animate-fade-in delay-400">
           <Link 
             href={`/${locale}/parties/one-piece/materials`}
             className="bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-xl p-4 text-center transition-colors"
           >
             <span className="text-2xl block mb-1">📦</span>
-            <span className="text-white text-sm font-medium">
-              {locale === "es" ? "Materiales" : "Materials"}
-            </span>
+            <span className="text-white text-sm font-medium">{t.materials}</span>
           </Link>
           <Link 
             href={`/${locale}/parties/one-piece/guests`}
             className="bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-xl p-4 text-center transition-colors"
           >
             <span className="text-2xl block mb-1">👥</span>
-            <span className="text-white text-sm font-medium">
-              {locale === "es" ? "Invitados" : "Guests"}
-            </span>
+            <span className="text-white text-sm font-medium">{t.guests}</span>
           </Link>
         </div>
 
         {/* Phase overview */}
         <div className="mt-8 space-y-4 animate-fade-in delay-500">
-          <h2 className="text-white font-semibold text-lg">
-            {locale === "es" ? "Fases de la Aventura" : "Adventure Phases"}
-          </h2>
+          <h2 className="text-white font-semibold text-lg">{t.phases}</h2>
           
           {party.phases.map((phase) => (
             <div 
@@ -165,32 +207,12 @@ export default async function OnePiecePartyPage({ params }: Props) {
                 <span className="text-2xl">{phase.icon}</span>
                 <div className="flex-1">
                   <h3 className="text-white font-semibold">{phase.name}</h3>
-                  <p className="text-sky-200 text-xs">{phase.activities.length} {locale === "es" ? "actividades" : "activities"}</p>
+                  <p className="text-sky-200 text-xs">{phase.activities.length} {t.activities}</p>
                 </div>
                 <span className="text-sky-300 text-sm">{phase.islandName}</span>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Crews info */}
-        <div className="mt-8 bg-white/10 backdrop-blur-sm rounded-xl p-4 animate-fade-in delay-600">
-          <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
-            <span>⚔️</span>
-            {locale === "es" ? "Tripulaciones" : "Crews"}
-          </h3>
-          <div className="flex gap-3">
-            {party.crews.teams.map((team) => (
-              <div 
-                key={team.name}
-                className="flex-1 rounded-lg p-3 text-center"
-                style={{ backgroundColor: `${team.color}20`, borderColor: team.color, borderWidth: 1 }}
-              >
-                <span className="text-2xl block">{team.icon}</span>
-                <span className="text-white text-sm font-medium">{team.name}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </main>
