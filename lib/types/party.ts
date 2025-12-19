@@ -150,6 +150,7 @@ export type ActivityType =
   | "interactive"
   | "sensory"
   | "puzzle"
+  | "teamwork"   // Sharing / collaboration activities
   | "rhythm"
   | "relay"
   | "finale"

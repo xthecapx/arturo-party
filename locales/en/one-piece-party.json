@@ -213,15 +213,19 @@
             "icon": "⚔️",
             "color": "#16a34a"
           },
-          "stationIntro": "I'm Zoro, the world's greatest swordsman... but I always get lost! Let's spin around and see if you can walk straight better than me.",
+          "stationIntro": "I'm Zoro, the world's greatest swordsman... but I always get lost! Let's spin around and see if you can walk straight better than me. Use the swords you got when you arrived!",
           "location": "Garden / Open Space",
           "objective": "Maintain balance after getting dizzy and knock down targets",
-          "description": "Spin 3 times to get dizzy and walk straight to knock down bottles with the sword.",
+          "description": "Spin 3 times to get dizzy and walk straight to knock down bottles with the balloon sword.",
           "materials": [
-            "Pool noodles (foam swords)",
+            "Balloon swords from the beginning (shared among the crew)",
             "Empty plastic bottles (6-10)"
           ],
           "steps": [
+            {
+              "name": "Prepare the Swords",
+              "instruction": "Remind them: 'We use the balloon swords we got when we arrived! If you don't have one, a crewmate will lend you theirs. We're a crew and we share!'"
+            },
             {
               "name": "I'm Lost!",
               "instruction": "The pirate spins 3 quick times to get slightly dizzy (Zoro style)"
@@ -232,18 +236,23 @@
             },
             {
               "name": "The Cut",
-              "instruction": "Using the foam sword, must knock down as many bottles as possible in one swing"
+              "instruction": "Using the balloon sword, must knock down as many bottles as possible in one swing. Then pass the sword to the next pirate!"
             }
+          ],
+          "tips": [
+            "Not everyone needs a sword at once - they take turns and share",
+            "If a sword pops, remind them there are more or they can share",
+            "Celebrate every attempt, not just successful ones"
           ],
           "shout": "Santoryu!",
           "duration": "10 minutes",
           "difficulty": "medium",
-          "minPlayers": 1,
-          "maxPlayers": 4
+          "minPlayers": 2,
+          "maxPlayers": 8
         },
         {
           "id": "3",
-          "title": "The Field Sniper",
+          "title": "The Sniper's Rings",
           "type": "accuracy",
           "typeLabel": "Accuracy (Throwing)",
           "character": {
@@ -251,38 +260,46 @@
             "icon": "🎯",
             "color": "#ca8a04"
           },
-          "stationIntro": "I am the great Captain Usopp, the bravest sniper on the seas! Well... sometimes I get a little scared. But my aim is perfect!",
-          "location": "Soccer Field (Penalty Area)",
-          "objective": "Knock down the enemy tower with precision",
-          "description": "Knock down a tower of boxes/cones by throwing a beach ball with hands.",
+          "stationIntro": "I am the great Captain Usopp, the bravest sniper on the seas! Well... sometimes I get a little scared. But my aim is perfect! Can you land as many rings as me?",
+          "location": "Open area",
+          "objective": "Land as many rings as possible together",
+          "description": "Throw rings at the sticks trying to land as many as possible. All together as a crew!",
           "materials": [
-            "Beach ball or inflatable pool ball",
-            "Cones, boxes or bottles to make tower"
+            "Sticks or stakes stuck in the ground (5-6)",
+            "Plastic or rope rings (10-15)"
           ],
           "steps": [
             {
-              "name": "The Enemy Tower",
-              "instruction": "Stack the cones or boxes forming a tall tower at the goal or penalty spot"
+              "name": "Set Up the Field",
+              "instruction": "Stick the poles in the ground at different distances. Mark a throwing line."
             },
             {
-              "name": "Load the Projectile",
-              "instruction": "Pirates take the beach ball (which is big and light)"
+              "name": "Hand Out the Rings",
+              "instruction": "Each pirate receives 2-3 rings to throw. Remind them: 'It's not a competition! We're a crew and we want to land ALL the rings together.'"
             },
             {
-              "name": "Precision Shot",
-              "instruction": "From the marked distance, must throw the ball with hands to knock down the tower"
+              "name": "Let's Throw!",
+              "instruction": "Taking turns, each pirate throws their rings trying to land them on the sticks. Others cheer: 'You can do it!'"
+            },
+            {
+              "name": "Count Together",
+              "instruction": "At the end, count ALL the rings landed by the whole crew. Celebrate the group result: 'Together we got X rings!'"
             }
           ],
-          "tips": ["Watch out for the wind!"],
+          "tips": [
+            "Adjust the distance based on children's age",
+            "If a child doesn't land any, encourage them and let them try closer",
+            "Always emphasize that the result belongs to EVERYONE, not individual"
+          ],
           "shout": "Hissatsu: Firebird Star!",
           "duration": "10 minutes",
           "difficulty": "easy",
-          "minPlayers": 1,
-          "maxPlayers": 6
+          "minPlayers": 2,
+          "maxPlayers": 10
         },
         {
           "id": "4",
-          "title": "The Fire Shot",
+          "title": "The Fire Kick",
           "type": "power",
           "typeLabel": "Power (Kick)",
           "character": {
@@ -290,33 +307,42 @@
             "icon": "🦵",
             "color": "#2563eb"
           },
-          "stationIntro": "I'm Sanji, the ship's cook. My hands are only for cooking, but my kicks are so strong they catch fire! Can you kick like me?",
-          "location": "Soccer Field (Goal)",
-          "objective": "Score a goal with a powerful shot",
-          "description": "Kick a real soccer ball with force to score a goal (Diable Jambe).",
+          "stationIntro": "I'm Sanji, the ship's cook. My hands are only for cooking, but my kicks are so strong they catch fire! Can you knock down the cups with just one kick?",
+          "location": "Open area",
+          "objective": "Knock down plastic cups using only legs",
+          "description": "Use your legs to knock down a tower of plastic cups. Like Sanji's fire kicks!",
           "materials": [
-            "Soccer ball",
-            "Goal (or two cones as posts)"
+            "Plastic cups (15-20)",
+            "Low table or surface to stack the cups"
           ],
           "steps": [
             {
-              "name": "Prepare the Ingredient",
-              "instruction": "Place the soccer ball at the shooting spot"
+              "name": "The Ingredient Tower",
+              "instruction": "Stack the plastic cups forming a pyramid or tower on a low table or the ground"
             },
             {
-              "name": "Diable Jambe",
-              "instruction": "Concentrate all energy in the leg"
+              "name": "Combat Position",
+              "instruction": "The pirate stands in front of the tower. Remind them: 'Sanji only uses his legs! Hands are for cooking, not fighting.'"
             },
             {
-              "name": "The Shot",
-              "instruction": "Kick hard to score in the goal. The ball must go in fast and strong!"
+              "name": "Diable Jambe!",
+              "instruction": "With one kick, the pirate tries to knock down as many cups as possible. Shout 'Diable Jambe!' when kicking!"
+            },
+            {
+              "name": "Rebuild Together",
+              "instruction": "Everyone helps stack the cups again for the next pirate. The crew helps each other!"
             }
+          ],
+          "tips": [
+            "Adjust the tower height based on child's age",
+            "If a child has difficulty, move the tower closer",
+            "Everyone helps pick up and stack - teamwork"
           ],
           "shout": "Diable Jambe!",
           "duration": "10 minutes",
           "difficulty": "easy",
-          "minPlayers": 1,
-          "maxPlayers": 6
+          "minPlayers": 2,
+          "maxPlayers": 8
         },
         {
           "id": "5",
@@ -397,7 +423,7 @@
           },
           "script": {
             "intro": "The Adventure: The Captain reads the story and children act when they hear the capitalized words",
-            "text": "The Thousand Sunny was sailing peacefully when Nami shouted: 'Watch out, a GIANT WAVE!'. The ship jumped and right after... Crack! A LIGHTNING bolt struck. We tried to escape, but a CYCLONE made us spin non-stop. We saw another GIANT WAVE and another LIGHTNING. Finally we saw the island! The captain shouted: DROP ANCHOR! And we were saved."
+            "text": "The Thousand Sunny was sailing peacefully through the sea... when suddenly Nami smelled the air and shouted: 'Watch out, a GIANT WAVE!'. The ship jumped very high and suddenly a LIGHTNING bolt struck from the sky. We kept sailing but another GIANT WAVE appeared. Luffy grabbed onto the mast when a CYCLONE made us spin non-stop. The wind calmed for a moment... but then another LIGHTNING!. Zoro drew his swords when he saw a GIANT WAVE coming. The ship went up and down, up and down. Chopper screamed scared because a new CYCLONE trapped us spinning round and round. Sanji almost lost his cigarette with so much LIGHTNING falling from the sky. Usopp hid when another GIANT WAVE passed. Finally Nami saw the island in the distance! But first we had to pass one last CYCLONE... We made it! Captain Luffy shouted with all his might: DROP ANCHOR! And finally... we were saved!"
           },
           "duration": "10 minutes",
           "difficulty": "easy",
@@ -443,55 +469,59 @@
         },
         {
           "id": "8",
-          "title": "The Poneglyph Message",
-          "type": "puzzle",
-          "typeLabel": "Search and Decipher",
+          "title": "The Crew's Treasure",
+          "type": "teamwork",
+          "typeLabel": "Search and Teamwork",
           "character": {
             "name": "Robin",
             "icon": "📚",
             "color": "#7c3aed"
           },
-          "stationIntro": "I'm Robin, the archaeologist. I can read ancient writings that nobody else understands. I've hidden a secret message... Can you decipher it?",
+          "stationIntro": "I'm Robin, the archaeologist. I've discovered that there are 4 treasure chests hidden around here. But remember, pirates... a true crew always shares the loot!",
           "location": "Bounded area (with hiding spots)",
-          "objective": "Find the clues and decipher the secret message",
-          "description": "Find 6 hidden cards and use the first letter of each drawing to form 'PIRATE'.",
+          "objective": "Find the chests and learn to share like true pirates",
+          "description": "Search for 4 hidden treasure chests, bring them to the center, and decide together how to split the loot fairly.",
           "materials": [
-            "6 cards with number and drawing (see list)"
+            "4 small decorated chests or boxes",
+            "Treasure to share (candy, gummies, small toys)",
+            "Table or central area to gather the chests"
           ],
-          "puzzle": {
-            "cards": [
-              { "number": 1, "image": "Parrot", "letter": "P" },
-              { "number": 2, "image": "Island", "letter": "I" },
-              { "number": 3, "image": "Rudder", "letter": "R" },
-              { "number": 4, "image": "Anchor", "letter": "A" },
-              { "number": 5, "image": "Treasure", "letter": "T" },
-              { "number": 6, "image": "Eye patch", "letter": "E" }
-            ],
-            "solution": "PIRATE"
-          },
           "steps": [
             {
-              "name": "Archaeological Search",
-              "instruction": "Robin has hidden 6 Poneglyphs (cards) around the area. The crew must spread out and find them all!"
+              "name": "The Mission",
+              "instruction": "Explain: 'There are 4 treasure chests hidden. You have to find them all and bring them to the center! But careful... don't open them yet!'"
             },
             {
-              "name": "The Order",
-              "instruction": "Once found, they must put them in order on the floor or a table following numbers 1 to 6"
+              "name": "The Search",
+              "instruction": "The children spread out to find the 4 chests. When they find one, they bring it to the center, and must shout: 'I'm a pirate who found a treasure!' and keep searching until all 4 are found."
             },
             {
-              "name": "The Instruction",
-              "instruction": "The adult guide explains: 'To read the ancient message, you must use the first letter of each drawing'"
+              "name": "The Gathering",
+              "instruction": "When all 4 chests are there, gather everyone in a circle. Ask: 'Who found each chest?' Celebrate everyone who searched."
             },
             {
-              "name": "The Ritual",
-              "instruction": "Point to each drawing in order and shout the letter: 'P!', 'I!', 'R!', 'A!', 'T!', 'E!' - Then everyone shouts together: 'PIRATE!'"
+              "name": "The Pirate Lesson",
+              "instruction": "Explain: 'In a real pirate crew, the treasure is NOT just for the one who finds it. It belongs to the WHOLE crew! Why? Because EVERYONE worked together to get it.'"
+            },
+            {
+              "name": "The Fair Split",
+              "instruction": "Open the chests and show the treasure. Ask the children: 'How do we split it so it's fair for everyone?' Guide them until they decide to share equally."
+            },
+            {
+              "name": "The Pirate Code",
+              "instruction": "Everyone repeats: 'We are a crew! We share the treasure!' Then distribute the loot equally among everyone."
             }
           ],
-          "shout": "PIRATE!",
+          "shout": "We are a crew!",
+          "tips": [
+            "Prepare the treasure so it can be easily divided among all children",
+            "If a child wants to keep more, gently remind them that pirates share",
+            "Celebrate when they decide to share fairly"
+          ],
           "duration": "15 minutes",
-          "difficulty": "medium",
-          "minPlayers": 2,
-          "maxPlayers": 10
+          "difficulty": "easy",
+          "minPlayers": 4,
+          "maxPlayers": 15
         },
         {
           "id": "9",
@@ -729,4 +759,5 @@
     ]
   }
 }
+
 

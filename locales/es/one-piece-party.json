@@ -213,15 +213,19 @@
             "icon": "⚔️",
             "color": "#16a34a"
           },
-          "stationIntro": "Soy Zoro, el mejor espadachín del mundo... ¡pero siempre me pierdo! Vamos a dar vueltas y ver si podéis caminar recto mejor que yo.",
+          "stationIntro": "Soy Zoro, el mejor espadachín del mundo... ¡pero siempre me pierdo! Vamos a dar vueltas y ver si podéis caminar recto mejor que yo. ¡Usad las espadas que os hicieron al llegar!",
           "location": "Jardín / Espacio Abierto",
           "objective": "Mantener el equilibrio después de marearse y derribar objetivos",
-          "description": "Dar 3 vueltas para marearse y caminar recto para derribar botellas con la espada.",
+          "description": "Dar 3 vueltas para marearse y caminar recto para derribar botellas con la espada de globo.",
           "materials": [
-            "Fideos de piscina (espadas de espuma)",
+            "Las espadas de globo del inicio (se comparten entre la tripulación)",
             "Botellas de plástico vacías (6-10)"
           ],
           "steps": [
+            {
+              "name": "Preparar las Espadas",
+              "instruction": "Recordar: '¡Usamos las espadas de globo que nos hicieron al llegar! Si no tienes una, un compañero te la presta. ¡Somos una tripulación y compartimos!'"
+            },
             {
               "name": "¡Me he perdido!",
               "instruction": "El pirata da 3 vueltas rápidas sobre sí mismo para marearse un poco (al estilo Zoro)"
@@ -232,18 +236,23 @@
             },
             {
               "name": "El Corte",
-              "instruction": "Usando su espada de espuma, debe derribar todas las botellas posibles de un solo golpe"
+              "instruction": "Usando su espada de globo, debe derribar todas las botellas posibles de un solo golpe. ¡Luego pasa la espada al siguiente pirata!"
             }
+          ],
+          "tips": [
+            "No todos necesitan espada a la vez - van por turnos y comparten",
+            "Si una espada se rompe, recordar que hay más o pueden compartir",
+            "Celebrar cada intento, no solo los exitosos"
           ],
           "shout": "¡Santoryu!",
           "duration": "10 minutos",
           "difficulty": "medium",
-          "minPlayers": 1,
-          "maxPlayers": 4
+          "minPlayers": 2,
+          "maxPlayers": 8
         },
         {
           "id": "3",
-          "title": "El Francotirador del Campo",
+          "title": "Los Aros del Francotirador",
           "type": "accuracy",
           "typeLabel": "Puntería (Lanzamiento)",
           "character": {
@@ -251,72 +260,89 @@
             "icon": "🎯",
             "color": "#ca8a04"
           },
-          "stationIntro": "¡Yo soy el gran Capitán Usopp, el francotirador más valiente de los mares! Bueno... a veces tengo un poquito de miedo. ¡Pero mi puntería es perfecta!",
-          "location": "Cancha de Fútbol (Área de penalti)",
-          "objective": "Derribar la torre enemiga con precisión",
-          "description": "Derribar una torre de cajas/conos lanzando una pelota de playa con las manos.",
+          "stationIntro": "¡Yo soy el gran Capitán Usopp, el francotirador más valiente de los mares! Bueno... a veces tengo un poquito de miedo. ¡Pero mi puntería es perfecta! ¿Podéis encestar tantos aros como yo?",
+          "location": "Zona abierta",
+          "objective": "Encestar la mayor cantidad de aros entre todos",
+          "description": "Lanzar aros a los palos intentando encestar el máximo posible. ¡Todos juntos como tripulación!",
           "materials": [
-            "Pelota de playa o piscina inflable",
-            "Conos, cajas o botellas para hacer torre"
+            "Palos o estacas clavados en el suelo (5-6)",
+            "Aros de plástico o cuerda (10-15)"
           ],
           "steps": [
             {
-              "name": "La Torre Enemiga",
-              "instruction": "Se apilan los conos o cajas formando una torre alta en la portería o punto de penalti"
+              "name": "Preparar el Campo",
+              "instruction": "Clavar los palos en el suelo a diferentes distancias. Marcar una línea de lanzamiento."
             },
             {
-              "name": "Cargar el Proyectil",
-              "instruction": "Los piratas toman la pelota de playa (que es grande y ligera)"
+              "name": "Repartir los Aros",
+              "instruction": "Cada pirata recibe 2-3 aros para lanzar. Recordar: '¡No es una competición! Somos una tripulación y queremos encestar TODOS los aros posibles juntos.'"
             },
             {
-              "name": "Disparo de Precisión",
-              "instruction": "Desde la distancia marcada, deben lanzar la pelota con las manos para derribar la torre"
+              "name": "¡A Lanzar!",
+              "instruction": "Por turnos, cada pirata lanza sus aros intentando encestarlos en los palos. Los demás animan: '¡Tú puedes!'"
+            },
+            {
+              "name": "Contar Juntos",
+              "instruction": "Al final, contar TODOS los aros encestados entre toda la tripulación. Celebrar el resultado grupal: '¡Entre todos conseguimos X aros!'"
             }
           ],
-          "tips": ["¡Cuidado con el viento!"],
+          "tips": [
+            "Ajustar la distancia según la edad de los niños",
+            "Si un niño no encesta ninguno, animarle y dejarle intentar más cerca",
+            "Enfatizar siempre que el resultado es DE TODOS, no individual"
+          ],
           "shout": "¡Hissatsu: Firebird Star!",
           "duration": "10 minutos",
           "difficulty": "easy",
-          "minPlayers": 1,
-          "maxPlayers": 6
+          "minPlayers": 2,
+          "maxPlayers": 10
         },
         {
           "id": "4",
-          "title": "El Tiro de Fuego",
+          "title": "La Patada de Fuego",
           "type": "power",
-          "typeLabel": "Potencia (Chute)",
+          "typeLabel": "Potencia (Patada)",
           "character": {
             "name": "Sanji",
             "icon": "🦵",
             "color": "#2563eb"
           },
-          "stationIntro": "Soy Sanji, el cocinero del barco. Mis manos son solo para cocinar, ¡pero mis patadas son tan fuertes que encienden fuego! ¿Podéis chutar como yo?",
-          "location": "Cancha de Fútbol (Portería)",
-          "objective": "Marcar gol con un tiro potente",
-          "description": "Chutar un balón de fútbol real con fuerza para marcar gol (Diable Jambe).",
+          "stationIntro": "Soy Sanji, el cocinero del barco. Mis manos son solo para cocinar, ¡pero mis patadas son tan fuertes que encienden fuego! ¿Podéis derribar los vasos con una sola patada?",
+          "location": "Zona abierta",
+          "objective": "Derribar los vasos de plástico usando solo las piernas",
+          "description": "Usar las piernas para derribar una torre de vasos de plástico. ¡Como las patadas de fuego de Sanji!",
           "materials": [
-            "Balón de fútbol",
-            "Portería (o dos conos como postes)"
+            "Vasos de plástico (15-20)",
+            "Mesa baja o superficie para apilar los vasos"
           ],
           "steps": [
             {
-              "name": "Preparar el Ingrediente",
-              "instruction": "Colocar el balón de fútbol en el punto de tiro"
+              "name": "La Torre de Ingredientes",
+              "instruction": "Apilar los vasos de plástico formando una pirámide o torre sobre la mesa baja o el suelo"
             },
             {
-              "name": "Diable Jambe",
-              "instruction": "Concentrar toda la energía en la pierna"
+              "name": "Posición de Combate",
+              "instruction": "El pirata se coloca frente a la torre. Recordar: '¡Sanji solo usa las piernas! Las manos son para cocinar, no para pelear.'"
             },
             {
-              "name": "El Remate",
-              "instruction": "Chutar con fuerza para marcar gol en la portería. ¡El balón debe entrar rápido y fuerte!"
+              "name": "¡Diable Jambe!",
+              "instruction": "Con una patada, el pirata intenta derribar todos los vasos posibles. ¡Gritar '¡Diable Jambe!' al patear!"
+            },
+            {
+              "name": "Reconstruir Juntos",
+              "instruction": "Entre todos vuelven a apilar los vasos para el siguiente pirata. ¡La tripulación se ayuda!"
             }
+          ],
+          "tips": [
+            "Ajustar la altura de la torre según la edad del niño",
+            "Si un niño tiene dificultad, acercar la torre",
+            "Todos ayudan a recoger y apilar - trabajo en equipo"
           ],
           "shout": "¡Diable Jambe!",
           "duration": "10 minutos",
           "difficulty": "easy",
-          "minPlayers": 1,
-          "maxPlayers": 6
+          "minPlayers": 2,
+          "maxPlayers": 8
         },
         {
           "id": "5",
@@ -397,7 +423,7 @@
           },
           "script": {
             "intro": "La Aventura: El Capitán lee el cuento y los niños actúan al oír las palabras en mayúscula",
-            "text": "El Thousand Sunny navegaba tranquilo cuando Nami gritó: '¡Cuidado, una OLA GIGANTE!'. El barco saltó y justo después... ¡Crac! Cayó un RAYO. Intentamos huir, pero un CICLÓN nos hizo girar sin parar. Vimos otra OLA GIGANTE y otro RAYO. ¡Por fin vimos la isla! El capitán gritó: ¡Tirad el ANCLA AL FONDO! Y nos salvamos."
+            "text": "El Thousand Sunny navegaba tranquilo por el mar... cuando de repente Nami olió el aire y gritó: '¡Cuidado, una OLA GIGANTE!'. El barco saltó muy alto y de repente cayó un RAYO del cielo. Seguimos navegando pero apareció otra OLA GIGANTE. Luffy se agarró al mástil cuando un CICLÓN nos hizo girar sin parar. El viento se calmó un momento... pero entonces otro ¡RAYO!. Zoro sacó sus espadas cuando vio venir una OLA GIGANTE. El barco subió y bajó, subió y bajó. Chopper gritó asustado porque un nuevo CICLÓN nos atrapó dando vueltas y vueltas. Sanji casi pierde su cigarro con tanto RAYO cayendo del cielo. Usopp se escondió cuando pasó otra OLA GIGANTE. ¡Por fin Nami vio la isla a lo lejos! Pero antes teníamos que pasar un último CICLÓN... ¡Lo logramos! El capitán Luffy gritó con todas sus fuerzas: ¡Tirad el ANCLA AL FONDO! Y por fin... ¡nos salvamos!"
           },
           "duration": "10 minutos",
           "difficulty": "easy",
@@ -443,55 +469,59 @@
         },
         {
           "id": "8",
-          "title": "El Mensaje Poneglyph",
-          "type": "puzzle",
-          "typeLabel": "Búsqueda y Descifrado",
+          "title": "El Tesoro de la Tripulación",
+          "type": "teamwork",
+          "typeLabel": "Búsqueda y Trabajo en Equipo",
           "character": {
             "name": "Robin",
             "icon": "📚",
             "color": "#7c3aed"
           },
-          "stationIntro": "Soy Robin, la arqueóloga. Puedo leer escrituras antiguas que nadie más entiende. He escondido un mensaje secreto... ¿Podéis descifrarlo?",
+          "stationIntro": "Soy Robin, la arqueóloga. He descubierto que hay 4 cofres del tesoro escondidos por aquí. ¡Pero recuerden, piratas... una tripulación de verdad siempre comparte el botín!",
           "location": "Zona delimitada (con lugares para esconder)",
-          "objective": "Encontrar las pistas y descifrar el mensaje secreto",
-          "description": "Buscar 6 tarjetas escondidas y usar la inicial de cada dibujo para formar 'PIRATA'.",
+          "objective": "Encontrar los cofres y aprender a compartir como verdaderos piratas",
+          "description": "Buscar 4 cofres del tesoro escondidos, traerlos al centro y decidir juntos cómo repartir el botín de forma justa.",
           "materials": [
-            "6 tarjetas con número y dibujo (ver lista)"
+            "4 cofres o cajas pequeñas decoradas",
+            "Tesoro para repartir (caramelos, gomitas, pequeños juguetes)",
+            "Mesa o zona central para reunir los cofres"
           ],
-          "puzzle": {
-            "cards": [
-              { "number": 1, "image": "Pez", "letter": "P" },
-              { "number": 2, "image": "Isla", "letter": "I" },
-              { "number": 3, "image": "Reloj (o Remo)", "letter": "R" },
-              { "number": 4, "image": "Ancla", "letter": "A" },
-              { "number": 5, "image": "Tiburón (o Tesoro)", "letter": "T" },
-              { "number": 6, "image": "Anillo (o Ave)", "letter": "A" }
-            ],
-            "solution": "PIRATA"
-          },
           "steps": [
             {
-              "name": "La Búsqueda Arqueológica",
-              "instruction": "Robin ha escondido 6 Poneglyphs (tarjetas) por la zona. ¡La tripulación debe dispersarse y encontrarlos todos!"
+              "name": "La Misión",
+              "instruction": "Explicar: 'Hay 4 cofres del tesoro escondidos. ¡Tenéis que encontrarlos todos y traerlos al centro! Pero ojo... ¡no los abráis todavía!'"
             },
             {
-              "name": "El Orden",
-              "instruction": "Una vez encontrados, deben ponerlos en orden en el suelo o una mesa siguiendo los números del 1 al 6"
+              "name": "La Búsqueda",
+              "instruction": "Los niños se dispersan a buscar los 4 cofres. Cuando encuentran uno, lo traen al centro, y deben gritar: 'Soy un pirata que encontró un tesoro!' y siguen buscando hasta encontrar los 4."
             },
             {
-              "name": "La Instrucción",
-              "instruction": "El adulto guía explica: 'Para leer el mensaje antiguo, debéis usar la primera letra de cada dibujo'"
+              "name": "La Reunión",
+              "instruction": "Cuando están los 4 cofres, reunir a todos en círculo. Preguntar: '¿Quién encontró cada cofre?' Celebrar a todos los que buscaron."
             },
             {
-              "name": "El Ritual",
-              "instruction": "Señalar cada dibujo en orden y gritar la letra: '¡P!', '¡I!', '¡R!', '¡A!', '¡T!', '¡A!' - Luego gritar todos a coro: '¡PIRATA!'"
+              "name": "La Lección Pirata",
+              "instruction": "Explicar: 'En una tripulación pirata de verdad, el tesoro NO es solo del que lo encuentra. ¡Es de TODA la tripulación! ¿Por qué? Porque TODOS trabajaron juntos para conseguirlo.'"
+            },
+            {
+              "name": "El Reparto Justo",
+              "instruction": "Abrir los cofres y mostrar el tesoro. Preguntar a los niños: '¿Cómo lo repartimos para que sea justo para todos?' Guiarlos hasta que decidan repartir equitativamente."
+            },
+            {
+              "name": "El Código Pirata",
+              "instruction": "Todos repiten: '¡Somos una tripulación! ¡Compartimos el tesoro!' Luego repartir el botín de forma equitativa entre todos."
             }
           ],
-          "shout": "¡PIRATA!",
+          "shout": "¡Somos una tripulación!",
+          "tips": [
+            "Preparar el tesoro para que se pueda dividir fácilmente entre todos los niños",
+            "Si un niño quiere quedarse con más, recordar suavemente que los piratas comparten",
+            "Celebrar cuando decidan compartir de forma justa"
+          ],
           "duration": "15 minutos",
-          "difficulty": "medium",
-          "minPlayers": 2,
-          "maxPlayers": 10
+          "difficulty": "easy",
+          "minPlayers": 4,
+          "maxPlayers": 15
         },
         {
           "id": "9",
@@ -729,4 +759,5 @@
     ]
   }
 }
+
 
