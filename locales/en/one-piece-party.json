@@ -1,0 +1,732 @@
+{
+  "meta": {
+    "title": "Arturo's 1st Birthday: The Treasure Hunt",
+    "theme": "One Piece",
+    "subtitle": "A pirate adventure divided into phases to celebrate Arturo's first year",
+    "totalActivities": 15,
+    "estimatedDuration": "3-4 hours",
+    "ageRange": "2-8 years"
+  },
+  "phases": [
+    {
+      "id": "phase_0",
+      "name": "Gathering at the Port",
+      "icon": "⚓",
+      "color": "#8B4513",
+      "description": "Arrival and preparations to get guests into character",
+      "islandName": "Departure Port",
+      "order": 0,
+      "activities": [
+        {
+          "id": "0.0",
+          "title": "The Time Machine",
+          "type": "arrival",
+          "typeLabel": "Welcome",
+          "character": {
+            "name": "Time Keeper",
+            "icon": "⏳"
+          },
+          "stationIntro": "Welcome, adventurers! Before we set sail, let's send a magical message to the future. Little Arturo will see it when he grows up!",
+          "objective": "Capture messages of wisdom for Arturo's future",
+          "description": "Each family upon arrival records a brief piece of advice (maximum 5 seconds) for Arturo in the future. A time capsule full of love and wisdom.",
+          "materials": [
+            "Mobile phone or camera for recording",
+            "Tripod or stand (optional)",
+            "Pirate-themed decorated background (optional)"
+          ],
+          "instructions": [
+            "Set up the recording station at the entrance",
+            "Greet each family as they arrive",
+            "Explain: 'We're going to send a message to the future for Arturo'",
+            "Indicate they have maximum 5 seconds to give advice",
+            "Record each family's message",
+            "Thank them and direct them to the balloon area"
+          ],
+          "promptSuggestions": [
+            "What advice would you give Arturo for his future?",
+            "What do you wish for Arturo when he grows up?",
+            "What's your greatest life wisdom?"
+          ],
+          "tips": [
+            "Have examples ready for families who don't know what to say",
+            "Keep the pace quick, no more than 1 minute per family",
+            "Save all videos to create a special montage later",
+            "One dedicated adult at this station during all arrivals"
+          ],
+          "duration": "During arrival (~30 min)",
+          "difficulty": "easy"
+        },
+        {
+          "id": "0.1",
+          "title": "The Balloon Arsenal",
+          "type": "waiting",
+          "typeLabel": "Waiting Activity",
+          "character": {
+            "name": "Armorer",
+            "icon": "⚔️"
+          },
+          "stationIntro": "Every pirate needs their sword! The ship's armorer will prepare your weapon for the adventure.",
+          "objective": "Transform kids into pirates while they wait",
+          "description": "Balloon twisting station where swords or pirate hats are made as children arrive.",
+          "materials": [
+            "Long balloons bag (260Q for balloon twisting)",
+            "Manual pump"
+          ],
+          "instructions": [
+            "Set up the station before guests arrive",
+            "Inflate and quickly model balloon swords",
+            "Kids can practice sword duels (carefully) while waiting",
+            "Optionally make pirate hats for variety"
+          ],
+          "tips": [
+            "Have several pre-made swords for early arrivals",
+            "One dedicated adult at this station during arrival"
+          ],
+          "duration": "During arrival (~30 min)",
+          "difficulty": "easy"
+        },
+        {
+          "id": "0.2",
+          "title": "The Call to Adventure",
+          "type": "narrative",
+          "typeLabel": "Narrative",
+          "character": {
+            "name": "Gol D. Roger",
+            "icon": "👑"
+          },
+          "objective": "Explain the mission and excite them for the adventure",
+          "description": "Reading of the welcome letter explaining that the treasure is not gold, but friendship.",
+          "materials": [
+            "Letter from the Pirate King (printed or on parchment)"
+          ],
+          "script": {
+            "intro": "Read when most guests have gathered",
+            "text": "Ahoy, young pirates!\n\nMy name is Gol D. Roger, the King of Pirates. I left behind the greatest treasure of all: the One Piece. It is not gold or jewels, but the symbol of adventure, dreams, and friendship.\n\nI have heard legends about the fearless Captain AMG. I have left you a map that will guide you through twelve legendary trials. Only when you prove you are a true pirate family will the path to the One Piece be revealed.\n\nRaise the Jolly Roger and sharpen your wits! May the winds be in your favor!"
+          },
+          "instructions": [
+            "Wait until most guests have arrived",
+            "Gather everyone in a circle",
+            "Read with a dramatic and exciting voice",
+            "Explain they must overcome the trials like true pirates"
+          ],
+          "duration": "5 minutes",
+          "difficulty": "easy"
+        },
+        {
+          "id": "0.3",
+          "title": "Boarding Rules",
+          "type": "logistics",
+          "typeLabel": "Logistics",
+          "character": {
+            "name": "Navigator",
+            "icon": "🧭"
+          },
+          "objective": "Explain game dynamics and divide teams",
+          "description": "Brief explanation of how the adventure will work.",
+          "materials": [
+            "Treasure Map (one per crew)",
+            "Stamps or stickers to mark completed trials"
+          ],
+          "rules": [
+            {
+              "title": "Two Crews",
+              "description": "We'll split into two groups to navigate better"
+            },
+            {
+              "title": "Companionship",
+              "description": "It's not a race against the other team. We all win if we reach the end!"
+            },
+            {
+              "title": "Rotation",
+              "description": "Some will go to certain islands while others go elsewhere to avoid waiting"
+            },
+            {
+              "title": "The Map",
+              "description": "Each time you complete a trial, put a stamp on your map!"
+            }
+          ],
+          "instructions": [
+            "Divide children into 2 balanced crews by age",
+            "Assign an adult captain to each crew",
+            "Give map to each group",
+            "Explain rotation system between stations"
+          ],
+          "duration": "5 minutes",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "phase_1",
+      "name": "The Grand Line Trials",
+      "icon": "🗺️",
+      "color": "#0369a1",
+      "description": "Main circuit of activities and games",
+      "islandName": "Grand Line",
+      "order": 1,
+      "activities": [
+        {
+          "id": "1",
+          "title": "The Great Leap to Skypiea",
+          "type": "cooperative",
+          "typeLabel": "Cooperative Parachute",
+          "character": {
+            "name": "Luffy",
+            "icon": "👒",
+            "color": "#dc2626"
+          },
+          "stationIntro": "I'm Luffy, and I'm gonna be King of the Pirates! My body is made of rubber and I can stretch reaaally far. Let's fly up to the clouds!",
+          "location": "Garden / Open Space",
+          "objective": "Work together to launch the balloon as high as possible",
+          "description": "Use a giant blanket as a parachute to launch a balloon and touch a 'giant's' hand.",
+          "materials": [
+            "Large blanket or old bedsheet",
+            "Colorful round balloons"
+          ],
+          "steps": [
+            {
+              "name": "Rubber Skin",
+              "instruction": "All pirates grab the edges of the giant blanket and place a balloon in the center"
+            },
+            {
+              "name": "The Giant",
+              "instruction": "An adult stands nearby with raised arm (acting as a giant or sky island)"
+            },
+            {
+              "name": "Gomu Gomu no ROCKET!",
+              "instruction": "On the count of three, children must pull the blanket tight to launch the balloon as high as possible and try to touch the adult's hand"
+            }
+          ],
+          "shout": "Gomu Gomu no ROCKET!",
+          "duration": "10 minutes",
+          "difficulty": "easy",
+          "minPlayers": 4,
+          "maxPlayers": 12
+        },
+        {
+          "id": "2",
+          "title": "The Swordsman's Path",
+          "type": "balance",
+          "typeLabel": "Balance and Accuracy",
+          "character": {
+            "name": "Zoro",
+            "icon": "⚔️",
+            "color": "#16a34a"
+          },
+          "stationIntro": "I'm Zoro, the world's greatest swordsman... but I always get lost! Let's spin around and see if you can walk straight better than me.",
+          "location": "Garden / Open Space",
+          "objective": "Maintain balance after getting dizzy and knock down targets",
+          "description": "Spin 3 times to get dizzy and walk straight to knock down bottles with the sword.",
+          "materials": [
+            "Pool noodles (foam swords)",
+            "Empty plastic bottles (6-10)"
+          ],
+          "steps": [
+            {
+              "name": "I'm Lost!",
+              "instruction": "The pirate spins 3 quick times to get slightly dizzy (Zoro style)"
+            },
+            {
+              "name": "Santoryu!",
+              "instruction": "Immediately after, must walk straight toward the enemy bottles"
+            },
+            {
+              "name": "The Cut",
+              "instruction": "Using the foam sword, must knock down as many bottles as possible in one swing"
+            }
+          ],
+          "shout": "Santoryu!",
+          "duration": "10 minutes",
+          "difficulty": "medium",
+          "minPlayers": 1,
+          "maxPlayers": 4
+        },
+        {
+          "id": "3",
+          "title": "The Field Sniper",
+          "type": "accuracy",
+          "typeLabel": "Accuracy (Throwing)",
+          "character": {
+            "name": "Usopp",
+            "icon": "🎯",
+            "color": "#ca8a04"
+          },
+          "stationIntro": "I am the great Captain Usopp, the bravest sniper on the seas! Well... sometimes I get a little scared. But my aim is perfect!",
+          "location": "Soccer Field (Penalty Area)",
+          "objective": "Knock down the enemy tower with precision",
+          "description": "Knock down a tower of boxes/cones by throwing a beach ball with hands.",
+          "materials": [
+            "Beach ball or inflatable pool ball",
+            "Cones, boxes or bottles to make tower"
+          ],
+          "steps": [
+            {
+              "name": "The Enemy Tower",
+              "instruction": "Stack the cones or boxes forming a tall tower at the goal or penalty spot"
+            },
+            {
+              "name": "Load the Projectile",
+              "instruction": "Pirates take the beach ball (which is big and light)"
+            },
+            {
+              "name": "Precision Shot",
+              "instruction": "From the marked distance, must throw the ball with hands to knock down the tower"
+            }
+          ],
+          "tips": ["Watch out for the wind!"],
+          "shout": "Hissatsu: Firebird Star!",
+          "duration": "10 minutes",
+          "difficulty": "easy",
+          "minPlayers": 1,
+          "maxPlayers": 6
+        },
+        {
+          "id": "4",
+          "title": "The Fire Shot",
+          "type": "power",
+          "typeLabel": "Power (Kick)",
+          "character": {
+            "name": "Sanji",
+            "icon": "🦵",
+            "color": "#2563eb"
+          },
+          "stationIntro": "I'm Sanji, the ship's cook. My hands are only for cooking, but my kicks are so strong they catch fire! Can you kick like me?",
+          "location": "Soccer Field (Goal)",
+          "objective": "Score a goal with a powerful shot",
+          "description": "Kick a real soccer ball with force to score a goal (Diable Jambe).",
+          "materials": [
+            "Soccer ball",
+            "Goal (or two cones as posts)"
+          ],
+          "steps": [
+            {
+              "name": "Prepare the Ingredient",
+              "instruction": "Place the soccer ball at the shooting spot"
+            },
+            {
+              "name": "Diable Jambe",
+              "instruction": "Concentrate all energy in the leg"
+            },
+            {
+              "name": "The Shot",
+              "instruction": "Kick hard to score in the goal. The ball must go in fast and strong!"
+            }
+          ],
+          "shout": "Diable Jambe!",
+          "duration": "10 minutes",
+          "difficulty": "easy",
+          "minPlayers": 1,
+          "maxPlayers": 6
+        },
+        {
+          "id": "5",
+          "title": "Emergency Repairs",
+          "type": "speed",
+          "typeLabel": "Speed",
+          "character": {
+            "name": "Franky",
+            "icon": "🤖",
+            "color": "#0891b2"
+          },
+          "stationIntro": "SUPER! I'm Franky, I'm half robot and I built the coolest ship in the world. But it has holes! Help me fix it before it sinks!",
+          "location": "Outdoor Area (where floor can get wet)",
+          "objective": "Repair the ship before it sinks",
+          "description": "Run to patch holes in a bucket with stickers before it fills with water.",
+          "materials": [
+            "Plastic bucket with small holes",
+            "Large stickers",
+            "Water"
+          ],
+          "steps": [
+            {
+              "name": "Battle Damage",
+              "instruction": "Show the bucket full of holes"
+            },
+            {
+              "name": "Repair Line",
+              "instruction": "Pirates form a line. One by one, they take a sticker (adults help younger ones peel it), run to the bucket and cover a hole"
+            },
+            {
+              "name": "Quality Check",
+              "instruction": "When all holes have stickers, the Captain pours water inside. If there are no leaks, the ship is ready to sail!"
+            }
+          ],
+          "shout": "SUPER!",
+          "duration": "10 minutes",
+          "difficulty": "medium",
+          "minPlayers": 3,
+          "maxPlayers": 8
+        },
+        {
+          "id": "6",
+          "title": "The Storm Tale",
+          "type": "interactive",
+          "typeLabel": "Interactive Story",
+          "character": {
+            "name": "Nami",
+            "icon": "🍊",
+            "color": "#f97316"
+          },
+          "stationIntro": "I'm Nami, the navigator! I can predict the weather just by smelling it. A terrible storm is coming! Are you ready to survive?",
+          "location": "Quiet Area / Sitting Circle",
+          "objective": "React to keywords with movements",
+          "description": "Children react to keywords (Wave, Lightning, Cyclone) with physical movements.",
+          "materials": [
+            "Story script (included below)"
+          ],
+          "training": {
+            "intro": "The Captain teaches the key moves:",
+            "moves": [
+              {
+                "trigger": "GIANT WAVE!",
+                "action": "Jump"
+              },
+              {
+                "trigger": "LIGHTNING!",
+                "action": "To the ground and cover"
+              },
+              {
+                "trigger": "CYCLONE!",
+                "action": "Spin around"
+              },
+              {
+                "trigger": "DROP ANCHOR!",
+                "action": "Freeze (statue)"
+              }
+            ]
+          },
+          "script": {
+            "intro": "The Adventure: The Captain reads the story and children act when they hear the capitalized words",
+            "text": "The Thousand Sunny was sailing peacefully when Nami shouted: 'Watch out, a GIANT WAVE!'. The ship jumped and right after... Crack! A LIGHTNING bolt struck. We tried to escape, but a CYCLONE made us spin non-stop. We saw another GIANT WAVE and another LIGHTNING. Finally we saw the island! The captain shouted: DROP ANCHOR! And we were saved."
+          },
+          "duration": "10 minutes",
+          "difficulty": "easy",
+          "minPlayers": 4,
+          "maxPlayers": 20
+        },
+        {
+          "id": "7",
+          "title": "The Secret Garden",
+          "type": "sensory",
+          "typeLabel": "Sensory",
+          "character": {
+            "name": "Chopper",
+            "icon": "🩺",
+            "color": "#ec4899"
+          },
+          "stationIntro": "I'm Chopper, the ship's doctor! I was a reindeer but I ate a magic fruit and now I can talk. I need your help to find secret medicines.",
+          "location": "Table or Floor (Shade)",
+          "objective": "Guess objects using only touch",
+          "description": "Guess hidden objects in a box using only touch.",
+          "materials": [
+            "Closed box with hand holes",
+            "Objects with different textures: pinecone, cotton, rocks, sandpaper, sponge, feather"
+          ],
+          "steps": [
+            {
+              "name": "Hidden Ingredients",
+              "instruction": "The objects are hidden inside the box"
+            },
+            {
+              "name": "The Diagnosis",
+              "instruction": "Without looking, the pirate puts their hand through the hole"
+            },
+            {
+              "name": "Guessing",
+              "instruction": "Only by touching, must shout what the object is (ex: 'It's a cotton cloud!', 'It's a rough rock!')"
+            }
+          ],
+          "duration": "10 minutes",
+          "difficulty": "easy",
+          "minPlayers": 1,
+          "maxPlayers": 6
+        },
+        {
+          "id": "8",
+          "title": "The Poneglyph Message",
+          "type": "puzzle",
+          "typeLabel": "Search and Decipher",
+          "character": {
+            "name": "Robin",
+            "icon": "📚",
+            "color": "#7c3aed"
+          },
+          "stationIntro": "I'm Robin, the archaeologist. I can read ancient writings that nobody else understands. I've hidden a secret message... Can you decipher it?",
+          "location": "Bounded area (with hiding spots)",
+          "objective": "Find the clues and decipher the secret message",
+          "description": "Find 6 hidden cards and use the first letter of each drawing to form 'PIRATE'.",
+          "materials": [
+            "6 cards with number and drawing (see list)"
+          ],
+          "puzzle": {
+            "cards": [
+              { "number": 1, "image": "Parrot", "letter": "P" },
+              { "number": 2, "image": "Island", "letter": "I" },
+              { "number": 3, "image": "Rudder", "letter": "R" },
+              { "number": 4, "image": "Anchor", "letter": "A" },
+              { "number": 5, "image": "Treasure", "letter": "T" },
+              { "number": 6, "image": "Eye patch", "letter": "E" }
+            ],
+            "solution": "PIRATE"
+          },
+          "steps": [
+            {
+              "name": "Archaeological Search",
+              "instruction": "Robin has hidden 6 Poneglyphs (cards) around the area. The crew must spread out and find them all!"
+            },
+            {
+              "name": "The Order",
+              "instruction": "Once found, they must put them in order on the floor or a table following numbers 1 to 6"
+            },
+            {
+              "name": "The Instruction",
+              "instruction": "The adult guide explains: 'To read the ancient message, you must use the first letter of each drawing'"
+            },
+            {
+              "name": "The Ritual",
+              "instruction": "Point to each drawing in order and shout the letter: 'P!', 'I!', 'R!', 'A!', 'T!', 'E!' - Then everyone shouts together: 'PIRATE!'"
+            }
+          ],
+          "shout": "PIRATE!",
+          "duration": "15 minutes",
+          "difficulty": "medium",
+          "minPlayers": 2,
+          "maxPlayers": 10
+        },
+        {
+          "id": "9",
+          "title": "The Binks' Sake Orchestra",
+          "type": "rhythm",
+          "typeLabel": "Rhythm and Memory",
+          "character": {
+            "name": "Brook",
+            "icon": "💀",
+            "color": "#1f2937"
+          },
+          "stationIntro": "YOHOHO! I'm Brook, a skeleton musician. I died but came back to life thanks to a magic fruit! Want to play music with me? I'm so excited I get goosebumps... even though I have no skin! YOHOHO!",
+          "location": "Central Space",
+          "objective": "Repeat the rhythms correctly",
+          "description": "Rhythm imitation game (claps, feet) guided by an adult.",
+          "materials": [
+            "'Binks' Sake' music in background (optional)",
+            "Speaker"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "name": "Easy",
+              "pattern": "Clap - Clap - 'YOHOHO!'"
+            },
+            {
+              "level": 2,
+              "name": "Feet",
+              "pattern": "Foot (stomp) - Foot - 'YOHOHO!'"
+            },
+            {
+              "level": 3,
+              "name": "Rhythm",
+              "pattern": "Clap - Foot - Clap - 'WE ARE PIRATES!'"
+            },
+            {
+              "level": 4,
+              "name": "Fast",
+              "pattern": "Knee - Knee - Clap - 'YOHOHO, YOHOHO!'"
+            },
+            {
+              "level": 5,
+              "name": "Grand Finale",
+              "pattern": "Foot - Foot - Clap - Toast (raise hand) - 'HAPPY BIRTHDAY ARTURO!'"
+            }
+          ],
+          "steps": [
+            {
+              "name": "The Conductor",
+              "instruction": "The adult ('Soul King') makes a rhythm with body and voice"
+            },
+            {
+              "name": "The Echo",
+              "instruction": "Pirates must repeat it exactly. If they fail, the captain laughs with a 'Yohoho'!"
+            }
+          ],
+          "shout": "YOHOHO!",
+          "duration": "10 minutes",
+          "difficulty": "medium",
+          "minPlayers": 4,
+          "maxPlayers": 20
+        },
+        {
+          "id": "10",
+          "title": "The Treasure Race",
+          "type": "relay",
+          "typeLabel": "Water Relay",
+          "character": {
+            "name": "Jimbei",
+            "icon": "🐳",
+            "color": "#0284c7"
+          },
+          "stationIntro": "I'm Jimbei, a fish-man. I can swim faster than anyone and control water. Let's see who can transport the most water without spilling!",
+          "location": "Outdoor (Grass)",
+          "objective": "Transport as much water as possible",
+          "description": "Transport water from one bucket to another using giant sponges.",
+          "materials": [
+            "4 buckets (2 full, 2 empty)",
+            "2 large sponges",
+            "Water"
+          ],
+          "steps": [
+            {
+              "name": "Load",
+              "instruction": "Soak the giant sponge in the full bucket"
+            },
+            {
+              "name": "Run",
+              "instruction": "Carry the dripping sponge to the empty bucket without losing too much water"
+            },
+            {
+              "name": "Squeeze",
+              "instruction": "Fill the target bucket to the mark as fast as possible"
+            }
+          ],
+          "duration": "10 minutes",
+          "difficulty": "easy",
+          "minPlayers": 4,
+          "maxPlayers": 12
+        },
+        {
+          "id": "11",
+          "title": "Captain Arturo's Grand Finale",
+          "type": "finale",
+          "typeLabel": "Collaborative Finale",
+          "character": {
+            "name": "Captain Arturo",
+            "icon": "👑",
+            "color": "#eab308"
+          },
+          "stationIntro": "You've passed all the trials! Now you must summon Captain Arturo to reveal the treasure. Only true pirates can do it!",
+          "location": "Cake Table / Party Center",
+          "objective": "Summon the Captain and reveal the treasure",
+          "description": "Form the initials A-M-G with shoes on the floor to summon the cake.",
+          "materials": [
+            "All children's shoes",
+            "Birthday cake",
+            "Candles"
+          ],
+          "steps": [
+            {
+              "name": "The Final Riddle",
+              "instruction": "For the treasure (and cake) to appear, the crew must summon the Captain"
+            },
+            {
+              "name": "Giant Initials",
+              "instruction": "Everyone takes off their shoes and uses them to form the letters A - M - G (Arturo) on the ground"
+            },
+            {
+              "name": "The Legendary Photo",
+              "instruction": "Captain Arturo stands in the middle of the letters and the 'Crew Photo' is taken from above"
+            },
+            {
+              "name": "Party Time!",
+              "instruction": "Once the photo is taken, the cake appears and the treasure is distributed!"
+            }
+          ],
+          "isFinale": true,
+          "duration": "15 minutes",
+          "difficulty": "easy",
+          "minPlayers": 6,
+          "maxPlayers": 30
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "name": "The Great Treasure",
+      "icon": "💎",
+      "color": "#eab308",
+      "description": "Rewards and adventure closing",
+      "islandName": "Laugh Tale",
+      "order": 2,
+      "activities": [
+        {
+          "id": "treasure",
+          "title": "Opening the Chest",
+          "type": "reward",
+          "typeLabel": "Reward",
+          "character": {
+            "name": "One Piece",
+            "icon": "💰"
+          },
+          "stationIntro": "We did it, crew! We found the One Piece. The real treasure was the adventure and friends we made along the way. But there are also prizes!",
+          "objective": "Celebrate victory and distribute prizes",
+          "description": "Opens after singing happy birthday. Contains individual bags to avoid conflicts.",
+          "treasureContents": [
+            "Individual surprise bags",
+            "Chocolate coins",
+            "Personalized 'Wanted' diplomas"
+          ],
+          "instructions": [
+            "Sing happy birthday",
+            "Blow out candles",
+            "Open the treasure chest",
+            "Distribute individual bags (one per child)",
+            "Give out 'Wanted' diplomas"
+          ],
+          "tips": [
+            "Prepare identical bags to avoid conflicts",
+            "Have extra bags just in case"
+          ],
+          "duration": "20 minutes",
+          "difficulty": "easy"
+        }
+      ]
+    }
+  ],
+  "crews": {
+    "description": "Crew division for activity rotation",
+    "teams": [
+      {
+        "name": "Straw Hat",
+        "icon": "👒",
+        "color": "#dc2626"
+      },
+      {
+        "name": "Heart Pirates",
+        "icon": "💛",
+        "color": "#eab308"
+      }
+    ],
+    "rotationTips": [
+      "Alternate teams at stations to avoid waiting",
+      "Cooperative activities (1, 6, 9, 11) can be done together",
+      "Individual activities (2, 3, 4, 7) work better in small groups"
+    ]
+  },
+  "guestList": {
+    "summary": {
+      "totalAdults": 12,
+      "totalChildren": 15
+    },
+    "guests": [
+      { "name": "Celeste / Agustín", "adults": 2, "children": 5, "contact": "Tony / Liz" },
+      { "name": "Helena", "adults": 0, "children": 1, "contact": "" },
+      { "name": "Arturo / Nico", "adults": 0, "children": 2, "contact": "" },
+      { "name": "Violeta", "adults": 0, "children": 1, "contact": "" },
+      { "name": "Julio / Nacho", "adults": 2, "children": 2, "contact": "Lili / Fabio" },
+      { "name": "Mateo", "adults": 1, "children": 1, "contact": "Jose Luis" },
+      { "name": "Sebas", "adults": 0, "children": 1, "contact": "" },
+      { "name": "Simon", "adults": 2, "children": 1, "contact": "Roger / Karen" },
+      { "name": "Maite's Child", "adults": 1, "children": 1, "contact": "Maite" },
+      { "name": "Luis / Aura", "adults": 2, "children": 0, "contact": "" },
+      { "name": "Mrs. Gloria", "adults": 1, "children": 0, "contact": "" },
+      { "name": "Gloria", "adults": 1, "children": 0, "contact": "" }
+    ]
+  },
+  "printables": {
+    "needed": [
+      "Pirate King's Letter",
+      "Treasure Maps (2, one per crew)",
+      "6 Poneglyph cards (Parrot, Island, Rudder, Anchor, Treasure, Eye patch)",
+      "'Wanted' Diplomas (15, one per child)"
+    ]
+  }
+}
+

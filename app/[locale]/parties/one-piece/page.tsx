@@ -1,8 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getDictionary } from "@/lib/i18n/get-dictionary";
+import { getPartyDictionary } from "@/lib/i18n/get-dictionary";
 import { type Locale, locales } from "@/lib/i18n/config";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import type { PartyData } from "@/lib/types/party";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -10,11 +11,11 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const dict = await getDictionary(locale as Locale);
+  const party = await getPartyDictionary(locale as Locale, "one-piece") as PartyData;
   
   return {
-    title: dict.onePiecePage.meta.title,
-    description: dict.onePiecePage.meta.description,
+    title: party.meta.title,
+    description: party.meta.subtitle,
   };
 }
 
@@ -22,10 +23,12 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default async function OnePiecePage({ params }: Props) {
+export default async function OnePiecePartyPage({ params }: Props) {
   const { locale } = await params;
-  const dict = await getDictionary(locale as Locale);
-  const t = dict.onePiecePage;
+  const party = await getPartyDictionary(locale as Locale, "one-piece") as PartyData;
+
+  // Count total activities across all phases
+  const totalActivities = party.phases.reduce((acc, phase) => acc + phase.activities.length, 0);
 
   return (
     <main className="min-h-dvh relative overflow-hidden" style={{
@@ -37,151 +40,159 @@ export default async function OnePiecePage({ params }: Props) {
       </div>
 
       {/* Animated ocean waves */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 overflow-hidden">
-        <div className="absolute bottom-0 w-[200%] h-24 animate-wave" style={{
+      <div className="absolute bottom-0 left-0 right-0 h-32 overflow-hidden pointer-events-none">
+        <div className="absolute bottom-0 w-[200%] h-20 animate-wave" style={{
           background: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120'%3E%3Cpath fill='%23075985' d='M0,60 C200,100 400,0 600,60 C800,120 1000,20 1200,60 L1200,120 L0,120 Z'/%3E%3C/svg%3E\")",
           backgroundRepeat: "repeat-x",
           backgroundSize: "600px 100%"
-        }} />
-        <div className="absolute bottom-0 w-[200%] h-20 animate-wave delay-200" style={{
-          background: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120'%3E%3Cpath fill='%230c4a6e' d='M0,60 C200,100 400,0 600,60 C800,120 1000,20 1200,60 L1200,120 L0,120 Z'/%3E%3C/svg%3E\")",
-          backgroundRepeat: "repeat-x",
-          backgroundSize: "500px 100%",
-          opacity: 0.8
         }} />
       </div>
 
       {/* Floating elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <span className="absolute top-16 left-6 text-4xl md:text-5xl animate-float">⚓</span>
-        <span className="absolute top-28 right-8 text-3xl md:text-4xl animate-float delay-300">🏴‍☠️</span>
-        <span className="absolute top-48 left-1/4 text-2xl animate-float delay-500">⭐</span>
-        <span className="absolute top-20 right-1/4 text-3xl animate-float delay-200">🗺️</span>
-        <span className="absolute top-1/3 right-6 text-2xl animate-float delay-400">💎</span>
-        <span className="absolute bottom-48 left-8 text-3xl animate-float delay-100">🦜</span>
-        <span className="absolute top-1/2 left-4 text-2xl animate-float delay-600">⚔️</span>
+        <span className="absolute top-20 left-6 text-3xl animate-float">⚓</span>
+        <span className="absolute top-32 right-8 text-2xl animate-float delay-300">🏴‍☠️</span>
+        <span className="absolute top-48 left-1/4 text-xl animate-float delay-500">⭐</span>
+        <span className="absolute bottom-40 right-12 text-2xl animate-float delay-200">🗺️</span>
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 px-5 py-8 pb-48 max-w-2xl mx-auto">
+      <div className="relative z-10 px-5 py-8 pb-40 max-w-lg mx-auto">
         {/* Back button */}
-        <Link href={`/${locale}`} className="inline-flex items-center text-sky-100 hover:text-white transition-colors mb-8 tap-target">
+        <Link href={`/${locale}`} className="inline-flex items-center text-sky-100 hover:text-white transition-colors mb-6 tap-target">
           <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
-          <span className="font-medium">{t.backButton}</span>
+          <span className="font-medium">{locale === "es" ? "Volver" : "Back"}</span>
         </Link>
 
         {/* Hero section */}
-        <header className="text-center mb-10 animate-fade-in">
-          <div className="inline-flex items-center justify-center w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-full shadow-2xl mb-6 relative">
-            <span className="text-5xl md:text-6xl">👒</span>
-            <div className="absolute -bottom-2 -right-2 bg-red-500 text-white rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center font-bold text-xl md:text-2xl shadow-lg border-2 border-white">
-              1
-            </div>
+        <header className="text-center mb-8 animate-fade-in">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-full shadow-2xl mb-4">
+            <span className="text-4xl">👒</span>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 drop-shadow-lg tracking-tight">
-            {t.hero.title}
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-2 drop-shadow-lg">
+            {party.meta.title}
           </h1>
-          <h2 className="text-3xl md:text-4xl font-bold text-amber-300 mb-4 drop-shadow-md">
-            {t.hero.subtitle}
-          </h2>
-          <p className="text-sky-100 text-lg md:text-xl max-w-md mx-auto">
-            {t.hero.description}
+          <p className="text-sky-100 text-sm md:text-base max-w-sm mx-auto">
+            {party.meta.subtitle}
           </p>
         </header>
 
-        {/* Party info card */}
-        <section className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-2xl mb-6 animate-fade-in delay-200">
-          <div className="flex items-center gap-3 mb-6">
-            <span className="text-3xl">📅</span>
-            <h3 className="text-2xl font-bold text-blue-900">{t.details.title}</h3>
+        {/* Stats badges */}
+        <div className="flex justify-center gap-3 mb-8 animate-fade-in delay-100">
+          <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm">
+            <span className="font-semibold">{totalActivities}</span> {locale === "es" ? "actividades" : "activities"}
+          </div>
+          <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 text-white text-sm">
+            🕐 {party.meta.estimatedDuration}
+          </div>
+        </div>
+
+        {/* Progress Map Preview */}
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 mb-6 animate-fade-in delay-200">
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="text-white font-semibold flex items-center gap-2">
+              <span>🗺️</span>
+              {locale === "es" ? "Ruta del Grand Line" : "Grand Line Route"}
+            </h2>
           </div>
           
-          <div className="space-y-4">
-            <div className="flex items-start gap-4 p-4 bg-gradient-to-r from-sky-50 to-blue-50 rounded-2xl">
-              <div className="w-12 h-12 bg-gradient-to-br from-sky-400 to-blue-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                <span className="text-xl">📍</span>
+          {/* Phase indicators */}
+          <div className="flex items-center gap-2">
+            {party.phases.map((phase, index) => (
+              <div key={phase.id} className="flex-1">
+                <div 
+                  className="h-2 rounded-full"
+                  style={{ backgroundColor: phase.color }}
+                />
+                <p className="text-xs text-sky-200 mt-1 text-center truncate">
+                  {phase.icon} {phase.activities.length}
+                </p>
               </div>
-              <div>
-                <h4 className="font-semibold text-blue-900">{t.details.location.label}</h4>
-                <p className="text-gray-600 text-sm">{t.details.location.value}</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4 p-4 bg-gradient-to-r from-amber-50 to-yellow-50 rounded-2xl">
-              <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-yellow-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                <span className="text-xl">🕐</span>
-              </div>
-              <div>
-                <h4 className="font-semibold text-amber-900">{t.details.time.label}</h4>
-                <p className="text-gray-600 text-sm">{t.details.time.value}</p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4 p-4 bg-gradient-to-r from-rose-50 to-pink-50 rounded-2xl">
-              <div className="w-12 h-12 bg-gradient-to-br from-rose-400 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0">
-                <span className="text-xl">👔</span>
-              </div>
-              <div>
-                <h4 className="font-semibold text-rose-900">{t.details.dressCode.label}</h4>
-                <p className="text-gray-600 text-sm">{t.details.dressCode.value}</p>
-              </div>
-            </div>
+            ))}
           </div>
-        </section>
+        </div>
 
-        {/* Treasure theme card */}
-        <section className="bg-gradient-to-br from-amber-400 via-yellow-400 to-amber-500 rounded-3xl p-6 md:p-8 shadow-2xl mb-6 animate-fade-in delay-300 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-300/30 rounded-full blur-2xl" />
-          <div className="relative">
-            <div className="text-center mb-4">
-              <span className="text-5xl">💰</span>
-            </div>
-            <h3 className="text-2xl font-bold text-amber-900 text-center mb-3">
-              {t.treasure.title}
-            </h3>
-            <p className="text-amber-800 text-center text-sm md:text-base">
-              {t.treasure.description}
-            </p>
+        {/* Start Adventure Button */}
+        <Link 
+          href={`/${locale}/parties/one-piece/play`}
+          className="block w-full animate-fade-in delay-300"
+        >
+          <div className="bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-400 hover:from-amber-500 hover:via-yellow-500 hover:to-amber-500 text-amber-900 font-bold text-lg py-4 px-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all hover:-translate-y-0.5 text-center">
+            <span className="flex items-center justify-center gap-3">
+              <span className="text-2xl">▶️</span>
+              {locale === "es" ? "COMENZAR AVENTURA" : "START ADVENTURE"}
+            </span>
           </div>
-        </section>
+        </Link>
 
-        {/* Fun facts */}
-        <section className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-2xl animate-fade-in delay-400">
-          <h3 className="text-2xl font-bold text-blue-900 mb-6 text-center">
-            {t.firstYear.title}
+        {/* Quick access buttons */}
+        <div className="grid grid-cols-2 gap-3 mt-4 animate-fade-in delay-400">
+          <Link 
+            href={`/${locale}/parties/one-piece/materials`}
+            className="bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-xl p-4 text-center transition-colors"
+          >
+            <span className="text-2xl block mb-1">📦</span>
+            <span className="text-white text-sm font-medium">
+              {locale === "es" ? "Materiales" : "Materials"}
+            </span>
+          </Link>
+          <Link 
+            href={`/${locale}/parties/one-piece/guests`}
+            className="bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-xl p-4 text-center transition-colors"
+          >
+            <span className="text-2xl block mb-1">👥</span>
+            <span className="text-white text-sm font-medium">
+              {locale === "es" ? "Invitados" : "Guests"}
+            </span>
+          </Link>
+        </div>
+
+        {/* Phase overview */}
+        <div className="mt-8 space-y-4 animate-fade-in delay-500">
+          <h2 className="text-white font-semibold text-lg">
+            {locale === "es" ? "Fases de la Aventura" : "Adventure Phases"}
+          </h2>
+          
+          {party.phases.map((phase) => (
+            <div 
+              key={phase.id}
+              className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border-l-4"
+              style={{ borderColor: phase.color }}
+            >
+              <div className="flex items-center gap-3">
+                <span className="text-2xl">{phase.icon}</span>
+                <div className="flex-1">
+                  <h3 className="text-white font-semibold">{phase.name}</h3>
+                  <p className="text-sky-200 text-xs">{phase.activities.length} {locale === "es" ? "actividades" : "activities"}</p>
+                </div>
+                <span className="text-sky-300 text-sm">{phase.islandName}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Crews info */}
+        <div className="mt-8 bg-white/10 backdrop-blur-sm rounded-xl p-4 animate-fade-in delay-600">
+          <h3 className="text-white font-semibold mb-3 flex items-center gap-2">
+            <span>⚔️</span>
+            {locale === "es" ? "Tripulaciones" : "Crews"}
           </h3>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="text-center p-4 bg-gradient-to-br from-blue-50 to-sky-50 rounded-2xl">
-              <span className="text-3xl block mb-2">🎂</span>
-              <p className="text-sm font-semibold text-blue-900">{t.firstYear.birthday}</p>
-            </div>
-            <div className="text-center p-4 bg-gradient-to-br from-amber-50 to-yellow-50 rounded-2xl">
-              <span className="text-3xl block mb-2">⭐</span>
-              <p className="text-sm font-semibold text-amber-900">{t.firstYear.dreams}</p>
-            </div>
-            <div className="text-center p-4 bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl">
-              <span className="text-3xl block mb-2">❤️</span>
-              <p className="text-sm font-semibold text-rose-900">{t.firstYear.love}</p>
-            </div>
-            <div className="text-center p-4 bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl">
-              <span className="text-3xl block mb-2">🌈</span>
-              <p className="text-sm font-semibold text-emerald-900">{t.firstYear.future}</p>
-            </div>
+          <div className="flex gap-3">
+            {party.crews.teams.map((team) => (
+              <div 
+                key={team.name}
+                className="flex-1 rounded-lg p-3 text-center"
+                style={{ backgroundColor: `${team.color}20`, borderColor: team.color, borderWidth: 1 }}
+              >
+                <span className="text-2xl block">{team.icon}</span>
+                <span className="text-white text-sm font-medium">{team.name}</span>
+              </div>
+            ))}
           </div>
-        </section>
-
-        {/* Crew message */}
-        <section className="mt-8 text-center animate-fade-in delay-500">
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white">
-            <span>👒</span>
-            <span className="font-medium text-sm">{t.crewMessage}</span>
-            <span>⚓</span>
-          </div>
-        </section>
+        </div>
       </div>
     </main>
   );
 }
-

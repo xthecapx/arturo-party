@@ -1,0 +1,732 @@
+{
+  "meta": {
+    "title": "1er Cumpleaños de Arturo: La Búsqueda del Tesoro",
+    "theme": "One Piece",
+    "subtitle": "Una aventura pirata dividida en fases para celebrar el primer año de Arturo",
+    "totalActivities": 15,
+    "estimatedDuration": "3-4 horas",
+    "ageRange": "2-8 años"
+  },
+  "phases": [
+    {
+      "id": "phase_0",
+      "name": "Reunión en el Puerto",
+      "icon": "⚓",
+      "color": "#8B4513",
+      "description": "Llegada y preparativos para ambientar a los invitados",
+      "islandName": "Puerto de Partida",
+      "order": 0,
+      "activities": [
+        {
+          "id": "0.0",
+          "title": "La Máquina del Tiempo",
+          "type": "arrival",
+          "typeLabel": "Bienvenida",
+          "character": {
+            "name": "Guardián del Tiempo",
+            "icon": "⏳"
+          },
+          "stationIntro": "¡Bienvenidos, aventureros! Antes de zarpar, vamos a enviar un mensaje mágico al futuro. ¡El pequeño Arturo lo verá cuando sea grande!",
+          "objective": "Capturar mensajes de sabiduría para el futuro de Arturo",
+          "description": "Cada familia al llegar graba un breve consejo (máximo 5 segundos) para Arturo en el futuro. Una cápsula del tiempo llena de amor y sabiduría.",
+          "materials": [
+            "Teléfono móvil o cámara para grabar",
+            "Trípode o soporte (opcional)",
+            "Fondo decorado con temática pirata (opcional)"
+          ],
+          "instructions": [
+            "Preparar la estación de grabación en la entrada",
+            "Recibir a cada familia al llegar",
+            "Explicar: 'Vamos a enviar un mensaje al futuro para Arturo'",
+            "Indicar que tienen máximo 5 segundos para dar un consejo",
+            "Grabar el mensaje de cada familia",
+            "Agradecer y dirigir hacia la zona de globos"
+          ],
+          "promptSuggestions": [
+            "¿Qué consejo le darías a Arturo para su futuro?",
+            "¿Qué le deseas a Arturo cuando sea mayor?",
+            "¿Cuál es tu mayor sabiduría de vida?"
+          ],
+          "tips": [
+            "Tener ejemplos preparados para familias que no sepan qué decir",
+            "Mantener el ritmo ágil, no más de 1 minuto por familia",
+            "Guardar todos los videos para crear un montaje especial después",
+            "Un adulto dedicado a esta estación durante toda la llegada"
+          ],
+          "duration": "Durante llegada (~30 min)",
+          "difficulty": "easy"
+        },
+        {
+          "id": "0.1",
+          "title": "El Arsenal de Globos",
+          "type": "waiting",
+          "typeLabel": "Actividad de Espera",
+          "character": {
+            "name": "Armero",
+            "icon": "⚔️"
+          },
+          "stationIntro": "¡Todo pirata necesita su espada! El armero del barco os preparará vuestra arma para la aventura.",
+          "objective": "Que los niños se vayan transformando en piratas mientras esperan",
+          "description": "Estación de globoflexia donde se hacen espadas o sombreros piratas a medida que llegan los niños.",
+          "materials": [
+            "Bolsa de globos largos (260Q para globoflexia)",
+            "Inflador manual"
+          ],
+          "instructions": [
+            "Preparar la estación antes de que lleguen los invitados",
+            "Inflar y modelar espadas de globo rápidamente",
+            "Los niños pueden practicar duelos de espada (con cuidado) mientras esperan",
+            "Opcionalmente hacer sombreros piratas para variedad"
+          ],
+          "tips": [
+            "Tener varias espadas pre-hechas para los primeros en llegar",
+            "Un adulto dedicado a esta estación durante la llegada"
+          ],
+          "duration": "Durante llegada (~30 min)",
+          "difficulty": "easy"
+        },
+        {
+          "id": "0.2",
+          "title": "La Llamada de la Aventura",
+          "type": "narrative",
+          "typeLabel": "Narrativa",
+          "character": {
+            "name": "Gol D. Roger",
+            "icon": "👑"
+          },
+          "objective": "Explicar la misión y emocionarlos para la aventura",
+          "description": "Lectura de la carta de bienvenida explicando que el tesoro no es oro, sino la amistad.",
+          "materials": [
+            "Carta del Rey de los Piratas (impresa o en pergamino)"
+          ],
+          "script": {
+            "intro": "Se lee cuando ya estén la mayoría de los invitados reunidos",
+            "text": "¡Ah del barco, jóvenes piratas!\n\nMi nombre es Gol D. Roger, el Rey de los Piratas. Dejé atrás el tesoro más grande de todos: el One Piece. No es oro ni joyas, sino el símbolo de la aventura, los sueños y la amistad.\n\nHe oído leyendas sobre el intrépido Capitán AMG. Os he dejado un mapa que os guiará a través de doce pruebas legendarias. Solo cuando demostréis que sois una verdadera familia pirata, el camino hacia el One Piece se revelará.\n\n¡Izad la Jolly Roger y afilad vuestro ingenio! ¡Que los vientos os sean favorables!"
+          },
+          "instructions": [
+            "Esperar a que estén la mayoría de invitados",
+            "Reunir a todos en círculo",
+            "Leer con voz dramática y emocionante",
+            "Explicar que deben superar las pruebas como verdaderos piratas"
+          ],
+          "duration": "5 minutos",
+          "difficulty": "easy"
+        },
+        {
+          "id": "0.3",
+          "title": "Reglas de Abordaje",
+          "type": "logistics",
+          "typeLabel": "Logística",
+          "character": {
+            "name": "Navegante",
+            "icon": "🧭"
+          },
+          "objective": "Explicar la dinámica del juego y dividir equipos",
+          "description": "Explicación breve de cómo funcionará la aventura.",
+          "materials": [
+            "Mapa del Tesoro (uno por tripulación)",
+            "Sellos o pegatinas para marcar pruebas completadas"
+          ],
+          "rules": [
+            {
+              "title": "Dos Tripulaciones",
+              "description": "Nos dividiremos en dos grupos para navegar mejor"
+            },
+            {
+              "title": "Compañerismo",
+              "description": "No es una carrera contra el otro equipo. ¡Todos ganamos si llegamos al final!"
+            },
+            {
+              "title": "Rotación",
+              "description": "Unos irán a unas islas y otros a otras para no esperar"
+            },
+            {
+              "title": "El Mapa",
+              "description": "Cada vez que superéis una prueba, ¡poned un sello en vuestro mapa!"
+            }
+          ],
+          "instructions": [
+            "Dividir niños en 2 tripulaciones equilibradas por edad",
+            "Asignar un adulto capitán a cada tripulación",
+            "Entregar mapa a cada grupo",
+            "Explicar sistema de rotación entre estaciones"
+          ],
+          "duration": "5 minutos",
+          "difficulty": "easy"
+        }
+      ]
+    },
+    {
+      "id": "phase_1",
+      "name": "Las Pruebas del Grand Line",
+      "icon": "🗺️",
+      "color": "#0369a1",
+      "description": "Circuito principal de actividades y juegos",
+      "islandName": "Grand Line",
+      "order": 1,
+      "activities": [
+        {
+          "id": "1",
+          "title": "El Gran Salto a Skypiea",
+          "type": "cooperative",
+          "typeLabel": "Paracaídas Cooperativo",
+          "character": {
+            "name": "Luffy",
+            "icon": "👒",
+            "color": "#dc2626"
+          },
+          "stationIntro": "¡Yo soy Luffy, y seré el Rey de los Piratas! Mi cuerpo es de goma y puedo estirarme muuucho. ¡Vamos a volar hasta las nubes!",
+          "location": "Jardín / Espacio Abierto",
+          "objective": "Trabajar en equipo para lanzar el globo lo más alto posible",
+          "description": "Usar una manta gigante como paracaídas para lanzar un globo y tocar la mano de un 'gigante'.",
+          "materials": [
+            "Manta grande o sábana vieja",
+            "Globos redondos de colores"
+          ],
+          "steps": [
+            {
+              "name": "La Piel de Goma",
+              "instruction": "Todos los piratas agarran los bordes de la manta gigante y colocan un globo en el centro"
+            },
+            {
+              "name": "El Gigante",
+              "instruction": "Un adulto se coloca cerca con el brazo levantado (haciendo de gigante o isla en el cielo)"
+            },
+            {
+              "name": "¡Gomu Gomu no ROCKET!",
+              "instruction": "A la cuenta de tres, los niños deben tensar la manta con fuerza para lanzar el globo lo más alto posible e intentar tocar la mano del adulto"
+            }
+          ],
+          "shout": "¡Gomu Gomu no ROCKET!",
+          "duration": "10 minutos",
+          "difficulty": "easy",
+          "minPlayers": 4,
+          "maxPlayers": 12
+        },
+        {
+          "id": "2",
+          "title": "El Camino del Espadachín",
+          "type": "balance",
+          "typeLabel": "Equilibrio y Puntería",
+          "character": {
+            "name": "Zoro",
+            "icon": "⚔️",
+            "color": "#16a34a"
+          },
+          "stationIntro": "Soy Zoro, el mejor espadachín del mundo... ¡pero siempre me pierdo! Vamos a dar vueltas y ver si podéis caminar recto mejor que yo.",
+          "location": "Jardín / Espacio Abierto",
+          "objective": "Mantener el equilibrio después de marearse y derribar objetivos",
+          "description": "Dar 3 vueltas para marearse y caminar recto para derribar botellas con la espada.",
+          "materials": [
+            "Fideos de piscina (espadas de espuma)",
+            "Botellas de plástico vacías (6-10)"
+          ],
+          "steps": [
+            {
+              "name": "¡Me he perdido!",
+              "instruction": "El pirata da 3 vueltas rápidas sobre sí mismo para marearse un poco (al estilo Zoro)"
+            },
+            {
+              "name": "¡Santoryu!",
+              "instruction": "Inmediatamente después, debe caminar recto hacia las botellas enemigas"
+            },
+            {
+              "name": "El Corte",
+              "instruction": "Usando su espada de espuma, debe derribar todas las botellas posibles de un solo golpe"
+            }
+          ],
+          "shout": "¡Santoryu!",
+          "duration": "10 minutos",
+          "difficulty": "medium",
+          "minPlayers": 1,
+          "maxPlayers": 4
+        },
+        {
+          "id": "3",
+          "title": "El Francotirador del Campo",
+          "type": "accuracy",
+          "typeLabel": "Puntería (Lanzamiento)",
+          "character": {
+            "name": "Usopp",
+            "icon": "🎯",
+            "color": "#ca8a04"
+          },
+          "stationIntro": "¡Yo soy el gran Capitán Usopp, el francotirador más valiente de los mares! Bueno... a veces tengo un poquito de miedo. ¡Pero mi puntería es perfecta!",
+          "location": "Cancha de Fútbol (Área de penalti)",
+          "objective": "Derribar la torre enemiga con precisión",
+          "description": "Derribar una torre de cajas/conos lanzando una pelota de playa con las manos.",
+          "materials": [
+            "Pelota de playa o piscina inflable",
+            "Conos, cajas o botellas para hacer torre"
+          ],
+          "steps": [
+            {
+              "name": "La Torre Enemiga",
+              "instruction": "Se apilan los conos o cajas formando una torre alta en la portería o punto de penalti"
+            },
+            {
+              "name": "Cargar el Proyectil",
+              "instruction": "Los piratas toman la pelota de playa (que es grande y ligera)"
+            },
+            {
+              "name": "Disparo de Precisión",
+              "instruction": "Desde la distancia marcada, deben lanzar la pelota con las manos para derribar la torre"
+            }
+          ],
+          "tips": ["¡Cuidado con el viento!"],
+          "shout": "¡Hissatsu: Firebird Star!",
+          "duration": "10 minutos",
+          "difficulty": "easy",
+          "minPlayers": 1,
+          "maxPlayers": 6
+        },
+        {
+          "id": "4",
+          "title": "El Tiro de Fuego",
+          "type": "power",
+          "typeLabel": "Potencia (Chute)",
+          "character": {
+            "name": "Sanji",
+            "icon": "🦵",
+            "color": "#2563eb"
+          },
+          "stationIntro": "Soy Sanji, el cocinero del barco. Mis manos son solo para cocinar, ¡pero mis patadas son tan fuertes que encienden fuego! ¿Podéis chutar como yo?",
+          "location": "Cancha de Fútbol (Portería)",
+          "objective": "Marcar gol con un tiro potente",
+          "description": "Chutar un balón de fútbol real con fuerza para marcar gol (Diable Jambe).",
+          "materials": [
+            "Balón de fútbol",
+            "Portería (o dos conos como postes)"
+          ],
+          "steps": [
+            {
+              "name": "Preparar el Ingrediente",
+              "instruction": "Colocar el balón de fútbol en el punto de tiro"
+            },
+            {
+              "name": "Diable Jambe",
+              "instruction": "Concentrar toda la energía en la pierna"
+            },
+            {
+              "name": "El Remate",
+              "instruction": "Chutar con fuerza para marcar gol en la portería. ¡El balón debe entrar rápido y fuerte!"
+            }
+          ],
+          "shout": "¡Diable Jambe!",
+          "duration": "10 minutos",
+          "difficulty": "easy",
+          "minPlayers": 1,
+          "maxPlayers": 6
+        },
+        {
+          "id": "5",
+          "title": "La Reparación de Emergencia",
+          "type": "speed",
+          "typeLabel": "Velocidad",
+          "character": {
+            "name": "Franky",
+            "icon": "🤖",
+            "color": "#0891b2"
+          },
+          "stationIntro": "¡SUPER! Soy Franky, soy mitad robot y construí el barco más genial del mundo. ¡Pero tiene agujeros! ¡Ayudadme a repararlo antes de que se hunda!",
+          "location": "Zona Exterior (donde se pueda mojar)",
+          "objective": "Reparar el barco antes de que se hunda",
+          "description": "Correr para tapar agujeros de un balde con stickers antes de que se llene de agua.",
+          "materials": [
+            "Balde de plástico con agujeros pequeños",
+            "Stickers/Pegatinas grandes",
+            "Agua"
+          ],
+          "steps": [
+            {
+              "name": "Daños de Batalla",
+              "instruction": "Se muestra el balde lleno de agujeros"
+            },
+            {
+              "name": "La Fila de Reparación",
+              "instruction": "Los piratas hacen una fila. De uno en uno, toman un sticker (los adultos ayudan a despegarlo a los más pequeños), corren al balde y tapan un agujero"
+            },
+            {
+              "name": "Prueba de Calidad",
+              "instruction": "Cuando todos los huecos tienen sticker, el Capitán vierte agua dentro. ¡Si no hay fugas, el barco está listo para zarpar!"
+            }
+          ],
+          "shout": "¡SUPER!",
+          "duration": "10 minutos",
+          "difficulty": "medium",
+          "minPlayers": 3,
+          "maxPlayers": 8
+        },
+        {
+          "id": "6",
+          "title": "El Cuento de la Tormenta",
+          "type": "interactive",
+          "typeLabel": "Cuento Interactivo",
+          "character": {
+            "name": "Nami",
+            "icon": "🍊",
+            "color": "#f97316"
+          },
+          "stationIntro": "¡Soy Nami, la navegante! Puedo predecir el clima solo con olerlo. ¡Se acerca una tormenta terrible! ¿Estáis listos para sobrevivir?",
+          "location": "Zona Tranquila / Círculo sentados",
+          "objective": "Reaccionar a las palabras clave con movimientos",
+          "description": "Los niños reaccionan a palabras clave (Ola, Rayo, Ciclón) con movimientos físicos.",
+          "materials": [
+            "Guion del cuento (incluido abajo)"
+          ],
+          "training": {
+            "intro": "El Capitán enseña los movimientos clave:",
+            "moves": [
+              {
+                "trigger": "¡OLA GIGANTE!",
+                "action": "Saltar"
+              },
+              {
+                "trigger": "¡RAYO!",
+                "action": "Al suelo y cubrirse"
+              },
+              {
+                "trigger": "¡CICLÓN!",
+                "action": "Dar una vuelta"
+              },
+              {
+                "trigger": "¡ANCLA AL FONDO!",
+                "action": "Estatua (congelados)"
+              }
+            ]
+          },
+          "script": {
+            "intro": "La Aventura: El Capitán lee el cuento y los niños actúan al oír las palabras en mayúscula",
+            "text": "El Thousand Sunny navegaba tranquilo cuando Nami gritó: '¡Cuidado, una OLA GIGANTE!'. El barco saltó y justo después... ¡Crac! Cayó un RAYO. Intentamos huir, pero un CICLÓN nos hizo girar sin parar. Vimos otra OLA GIGANTE y otro RAYO. ¡Por fin vimos la isla! El capitán gritó: ¡Tirad el ANCLA AL FONDO! Y nos salvamos."
+          },
+          "duration": "10 minutos",
+          "difficulty": "easy",
+          "minPlayers": 4,
+          "maxPlayers": 20
+        },
+        {
+          "id": "7",
+          "title": "El Jardín Secreto",
+          "type": "sensory",
+          "typeLabel": "Sensorial",
+          "character": {
+            "name": "Chopper",
+            "icon": "🩺",
+            "color": "#ec4899"
+          },
+          "stationIntro": "¡Soy Chopper, el doctor del barco! Era un reno pero comí una fruta mágica y ahora puedo hablar. Necesito que me ayudéis a encontrar medicinas secretas.",
+          "location": "Mesa o Suelo (Sombra)",
+          "objective": "Adivinar objetos usando solo el tacto",
+          "description": "Adivinar objetos ocultos en una caja solo usando el tacto.",
+          "materials": [
+            "Caja cerrada con agujeros para las manos",
+            "Objetos con diferentes texturas: piña, algodón, piedras, lija, esponja, pluma"
+          ],
+          "steps": [
+            {
+              "name": "Ingredientes Ocultos",
+              "instruction": "Los objetos están escondidos dentro de la caja"
+            },
+            {
+              "name": "El Diagnóstico",
+              "instruction": "Sin mirar, el pirata mete la mano por el agujero"
+            },
+            {
+              "name": "Adivinanza",
+              "instruction": "Solo tocando, debe gritar qué objeto es (ej: '¡Es una nube de algodón!', '¡Es una piedra rugosa!')"
+            }
+          ],
+          "duration": "10 minutos",
+          "difficulty": "easy",
+          "minPlayers": 1,
+          "maxPlayers": 6
+        },
+        {
+          "id": "8",
+          "title": "El Mensaje Poneglyph",
+          "type": "puzzle",
+          "typeLabel": "Búsqueda y Descifrado",
+          "character": {
+            "name": "Robin",
+            "icon": "📚",
+            "color": "#7c3aed"
+          },
+          "stationIntro": "Soy Robin, la arqueóloga. Puedo leer escrituras antiguas que nadie más entiende. He escondido un mensaje secreto... ¿Podéis descifrarlo?",
+          "location": "Zona delimitada (con lugares para esconder)",
+          "objective": "Encontrar las pistas y descifrar el mensaje secreto",
+          "description": "Buscar 6 tarjetas escondidas y usar la inicial de cada dibujo para formar 'PIRATA'.",
+          "materials": [
+            "6 tarjetas con número y dibujo (ver lista)"
+          ],
+          "puzzle": {
+            "cards": [
+              { "number": 1, "image": "Pez", "letter": "P" },
+              { "number": 2, "image": "Isla", "letter": "I" },
+              { "number": 3, "image": "Reloj (o Remo)", "letter": "R" },
+              { "number": 4, "image": "Ancla", "letter": "A" },
+              { "number": 5, "image": "Tiburón (o Tesoro)", "letter": "T" },
+              { "number": 6, "image": "Anillo (o Ave)", "letter": "A" }
+            ],
+            "solution": "PIRATA"
+          },
+          "steps": [
+            {
+              "name": "La Búsqueda Arqueológica",
+              "instruction": "Robin ha escondido 6 Poneglyphs (tarjetas) por la zona. ¡La tripulación debe dispersarse y encontrarlos todos!"
+            },
+            {
+              "name": "El Orden",
+              "instruction": "Una vez encontrados, deben ponerlos en orden en el suelo o una mesa siguiendo los números del 1 al 6"
+            },
+            {
+              "name": "La Instrucción",
+              "instruction": "El adulto guía explica: 'Para leer el mensaje antiguo, debéis usar la primera letra de cada dibujo'"
+            },
+            {
+              "name": "El Ritual",
+              "instruction": "Señalar cada dibujo en orden y gritar la letra: '¡P!', '¡I!', '¡R!', '¡A!', '¡T!', '¡A!' - Luego gritar todos a coro: '¡PIRATA!'"
+            }
+          ],
+          "shout": "¡PIRATA!",
+          "duration": "15 minutos",
+          "difficulty": "medium",
+          "minPlayers": 2,
+          "maxPlayers": 10
+        },
+        {
+          "id": "9",
+          "title": "La Orquesta del Binks' Sake",
+          "type": "rhythm",
+          "typeLabel": "Ritmo y Memoria",
+          "character": {
+            "name": "Brook",
+            "icon": "💀",
+            "color": "#1f2937"
+          },
+          "stationIntro": "¡YOHOHO! Soy Brook, un esqueleto músico. ¡Morí pero reviví gracias a una fruta mágica! ¿Queréis tocar música conmigo? ¡Me emociono tanto que se me pone la piel de gallina... aunque no tengo piel! ¡YOHOHO!",
+          "location": "Espacio Central",
+          "objective": "Repetir los ritmos correctamente",
+          "description": "Juego de imitación de ritmos (aplausos, pies) guiado por un adulto.",
+          "materials": [
+            "Música 'El Sake de Binks' de fondo (opcional)",
+            "Altavoz"
+          ],
+          "levels": [
+            {
+              "level": 1,
+              "name": "Fácil",
+              "pattern": "Aplauso - Aplauso - '¡YOHOHO!'"
+            },
+            {
+              "level": 2,
+              "name": "Pies",
+              "pattern": "Pie (pisotón) - Pie - '¡YOHOHO!'"
+            },
+            {
+              "level": 3,
+              "name": "Ritmo",
+              "pattern": "Aplauso - Pie - Aplauso - '¡SOMOS PIRATAS!'"
+            },
+            {
+              "level": 4,
+              "name": "Rápido",
+              "pattern": "Rodilla - Rodilla - Aplauso - '¡YOHOHO, YOHOHO!'"
+            },
+            {
+              "level": 5,
+              "name": "Gran Final",
+              "pattern": "Pie - Pie - Aplauso - Brindis (alzar la mano) - '¡FELIZ CUMPLEAÑOS ARTURO!'"
+            }
+          ],
+          "steps": [
+            {
+              "name": "El Director",
+              "instruction": "El adulto ('Soul King') hace un ritmo con el cuerpo y la voz"
+            },
+            {
+              "name": "El Eco",
+              "instruction": "Los piratas deben repetirlo igual. ¡Si fallan, el capitán se ríe con un 'Yohoho'!"
+            }
+          ],
+          "shout": "¡YOHOHO!",
+          "duration": "10 minutos",
+          "difficulty": "medium",
+          "minPlayers": 4,
+          "maxPlayers": 20
+        },
+        {
+          "id": "10",
+          "title": "La Carrera del Tesoro",
+          "type": "relay",
+          "typeLabel": "Relevos de Agua",
+          "character": {
+            "name": "Jimbei",
+            "icon": "🐳",
+            "color": "#0284c7"
+          },
+          "stationIntro": "Soy Jimbei, un hombre-pez. Puedo nadar más rápido que nadie y controlar el agua. ¡Vamos a ver quién puede transportar más agua sin derramarla!",
+          "location": "Exterior (Césped)",
+          "objective": "Transportar la mayor cantidad de agua posible",
+          "description": "Transportar agua de un cubo a otro usando esponjas gigantes.",
+          "materials": [
+            "4 cubos (2 llenos, 2 vacíos)",
+            "2 esponjas grandes",
+            "Agua"
+          ],
+          "steps": [
+            {
+              "name": "Cargar",
+              "instruction": "Mojar la esponja gigante en el cubo lleno"
+            },
+            {
+              "name": "Correr",
+              "instruction": "Llevar la esponja chorreando hasta el cubo vacío sin perder mucha agua"
+            },
+            {
+              "name": "Exprimir",
+              "instruction": "Llenar el cubo objetivo hasta la marca lo más rápido posible"
+            }
+          ],
+          "duration": "10 minutos",
+          "difficulty": "easy",
+          "minPlayers": 4,
+          "maxPlayers": 12
+        },
+        {
+          "id": "11",
+          "title": "El Gran Final del Capitán Arturo",
+          "type": "finale",
+          "typeLabel": "Final Colaborativo",
+          "character": {
+            "name": "Capitán Arturo",
+            "icon": "👑",
+            "color": "#eab308"
+          },
+          "stationIntro": "¡Habéis superado todas las pruebas! Ahora debéis invocar al Capitán Arturo para revelar el tesoro. ¡Solo los verdaderos piratas pueden hacerlo!",
+          "location": "Mesa del Pastel / Centro de la fiesta",
+          "objective": "Invocar al Capitán y revelar el tesoro",
+          "description": "Formar las siglas A-M-G con zapatos en el suelo para invocar el pastel.",
+          "materials": [
+            "Los zapatos de todos los niños",
+            "Pastel de cumpleaños",
+            "Velas"
+          ],
+          "steps": [
+            {
+              "name": "El Último Enigma",
+              "instruction": "Para que aparezca el tesoro (y el pastel), la tripulación debe invocar al Capitán"
+            },
+            {
+              "name": "Siglas Gigantes",
+              "instruction": "Todos se descalzan y usan sus zapatos para formar las siglas A - M - G (Arturo) en el suelo"
+            },
+            {
+              "name": "La Foto Legendaria",
+              "instruction": "El Capitán Arturo se coloca en medio de las letras y se toma la 'Foto de la Tripulación' desde arriba"
+            },
+            {
+              "name": "¡Fiesta!",
+              "instruction": "Una vez hecha la foto, ¡aparece el pastel y se reparte el tesoro!"
+            }
+          ],
+          "isFinale": true,
+          "duration": "15 minutos",
+          "difficulty": "easy",
+          "minPlayers": 6,
+          "maxPlayers": 30
+        }
+      ]
+    },
+    {
+      "id": "phase_2",
+      "name": "El Gran Tesoro",
+      "icon": "💎",
+      "color": "#eab308",
+      "description": "Recompensas y cierre de la aventura",
+      "islandName": "Laugh Tale",
+      "order": 2,
+      "activities": [
+        {
+          "id": "treasure",
+          "title": "Apertura del Cofre",
+          "type": "reward",
+          "typeLabel": "Recompensa",
+          "character": {
+            "name": "One Piece",
+            "icon": "💰"
+          },
+          "stationIntro": "¡Lo logramos, tripulación! Hemos encontrado el One Piece. El verdadero tesoro era la aventura y los amigos que hicimos. ¡Pero también hay premios!",
+          "objective": "Celebrar la victoria y repartir premios",
+          "description": "Se abre tras cantar el cumpleaños. Contiene bolsas individuales para evitar conflictos.",
+          "treasureContents": [
+            "Bolsas sorpresa individuales",
+            "Monedas de chocolate",
+            "Diplomas 'Se Busca' personalizados"
+          ],
+          "instructions": [
+            "Cantar cumpleaños feliz",
+            "Soplar las velas",
+            "Abrir el cofre del tesoro",
+            "Repartir bolsas individuales (una por niño)",
+            "Entregar diplomas 'Se Busca'"
+          ],
+          "tips": [
+            "Preparar bolsas idénticas para evitar conflictos",
+            "Tener bolsas extra por si acaso"
+          ],
+          "duration": "20 minutos",
+          "difficulty": "easy"
+        }
+      ]
+    }
+  ],
+  "crews": {
+    "description": "División de tripulaciones para rotación de actividades",
+    "teams": [
+      {
+        "name": "Sombrero de Paja",
+        "icon": "👒",
+        "color": "#dc2626"
+      },
+      {
+        "name": "Heart Pirates",
+        "icon": "💛",
+        "color": "#eab308"
+      }
+    ],
+    "rotationTips": [
+      "Alternar equipos en estaciones para evitar esperas",
+      "Las actividades cooperativas (1, 6, 9, 11) pueden hacerse juntos",
+      "Las actividades individuales (2, 3, 4, 7) funcionan mejor en grupos pequeños"
+    ]
+  },
+  "guestList": {
+    "summary": {
+      "totalAdults": 12,
+      "totalChildren": 15
+    },
+    "guests": [
+      { "name": "Celeste / Agustín", "adults": 2, "children": 5, "contact": "Tony / Liz" },
+      { "name": "Helena", "adults": 0, "children": 1, "contact": "" },
+      { "name": "Arturo / Nico", "adults": 0, "children": 2, "contact": "" },
+      { "name": "Violeta", "adults": 0, "children": 1, "contact": "" },
+      { "name": "Julio / Nacho", "adults": 2, "children": 2, "contact": "Lili / Fabio" },
+      { "name": "Mateo", "adults": 1, "children": 1, "contact": "Jose Luis" },
+      { "name": "Sebas", "adults": 0, "children": 1, "contact": "" },
+      { "name": "Simon", "adults": 2, "children": 1, "contact": "Roger / Karen" },
+      { "name": "Hijo / Hija Maite", "adults": 1, "children": 1, "contact": "Maite" },
+      { "name": "Luis / Aura", "adults": 2, "children": 0, "contact": "" },
+      { "name": "Señora Gloria", "adults": 1, "children": 0, "contact": "" },
+      { "name": "Gloria", "adults": 1, "children": 0, "contact": "" }
+    ]
+  },
+  "printables": {
+    "needed": [
+      "Carta del Rey de los Piratas",
+      "Mapas del Tesoro (2, uno por tripulación)",
+      "6 tarjetas Poneglyph (Pez, Isla, Reloj, Ancla, Tiburón, Anillo)",
+      "Diplomas 'Se Busca' (15, uno por niño)"
+    ]
+  }
+}
+
