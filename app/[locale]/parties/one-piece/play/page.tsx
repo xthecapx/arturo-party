@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, use } from "react";
+import { useState, useEffect, use, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { ActivityCard } from "@/components/ActivityCard";
@@ -79,12 +79,7 @@ function getOrderedActivities(party: PartyData, crew: CrewType): FlatActivity[] 
   return flat;
 }
 
-export default function PlayPage({ 
-  params 
-}: { 
-  params: Promise<{ locale: string }> 
-}) {
-  const { locale } = use(params);
+function PlayPageContent({ locale }: { locale: string }) {
   const searchParams = useSearchParams();
   const crewParam = searchParams.get("crew") as CrewType | null;
   const crew: CrewType = crewParam && CREW_CONFIG[crewParam] ? crewParam : "straw-hat";
@@ -270,5 +265,30 @@ export default function PlayPage({
         />
       </div>
     </>
+  );
+}
+
+function LoadingFallback() {
+  return (
+    <div className="min-h-dvh bg-slate-900 flex items-center justify-center">
+      <div className="text-center">
+        <div className="animate-spin text-4xl mb-4">⚓</div>
+        <p className="text-white">Loading...</p>
+      </div>
+    </div>
+  );
+}
+
+export default function PlayPage({ 
+  params 
+}: { 
+  params: Promise<{ locale: string }> 
+}) {
+  const { locale } = use(params);
+  
+  return (
+    <Suspense fallback={<LoadingFallback />}>
+      <PlayPageContent locale={locale} />
+    </Suspense>
   );
 }
