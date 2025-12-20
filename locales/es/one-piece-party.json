@@ -432,40 +432,46 @@
         },
         {
           "id": "7",
-          "title": "El Jardín Secreto",
-          "type": "sensory",
-          "typeLabel": "Sensorial",
+          "title": "La Mejor Medicina",
+          "type": "cooperative",
+          "typeLabel": "Cooperativo",
           "character": {
             "name": "Chopper",
             "icon": "🩺",
             "color": "#ec4899"
           },
-          "stationIntro": "¡Soy Chopper, el doctor del barco! Era un reno pero comí una fruta mágica y ahora puedo hablar. Necesito que me ayudéis a encontrar medicinas secretas.",
-          "location": "Mesa o Suelo (Sombra)",
-          "objective": "Adivinar objetos usando solo el tacto",
-          "description": "Adivinar objetos ocultos en una caja solo usando el tacto.",
+          "stationIntro": "¡Soy Chopper, el doctor del barco! Era un reno pero comí una fruta mágica y ahora puedo hablar. El capitán necesita una medicina especial... ¡una dosis de SONRISAS!",
+          "location": "Alrededor de Arturo",
+          "objective": "Hacer reír a Arturo",
+          "description": "El Dr. Chopper receta la mejor medicina: ¡la risa! La tripulación debe trabajar juntos para hacer sonreír al capitán del cumpleaños.",
           "materials": [
-            "Caja cerrada con agujeros para las manos",
-            "Objetos con diferentes texturas: piña, algodón, piedras, lija, esponja, pluma"
+            "Caras graciosas",
+            "Bailes tontos",
+            "Sonidos graciosos"
           ],
           "steps": [
             {
-              "name": "Ingredientes Ocultos",
-              "instruction": "Los objetos están escondidos dentro de la caja"
-            },
-            {
               "name": "El Diagnóstico",
-              "instruction": "Sin mirar, el pirata mete la mano por el agujero"
+              "instruction": "El Dr. Chopper anuncia: '¡El capitán necesita medicina! La mejor medicina es... ¡LA RISA!'"
             },
             {
-              "name": "Adivinanza",
-              "instruction": "Solo tocando, debe gritar qué objeto es (ej: '¡Es una nube de algodón!', '¡Es una piedra rugosa!')"
+              "name": "El Tratamiento",
+              "instruction": "Cada pirata intenta hacer reír a Arturo: ¡caras graciosas, bailes tontos, cosquillitas suaves, sonidos divertidos!"
+            },
+            {
+              "name": "La Cura",
+              "instruction": "Cuando Arturo se ría, ¡todos celebran! '¡La medicina funcionó! ¡El capitán está curado!'"
             }
           ],
-          "duration": "10 minutos",
+          "duration": "5 minutos",
           "difficulty": "easy",
           "minPlayers": 1,
-          "maxPlayers": 6
+          "maxPlayers": 15,
+          "tips": [
+            "Todos pueden intentarlo al mismo tiempo si es necesario",
+            "Celebra cada sonrisa y risita",
+            "¡Este es un gran momento para fotos!"
+          ]
         },
         {
           "id": "8",

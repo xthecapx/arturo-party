@@ -432,40 +432,46 @@
         },
         {
           "id": "7",
-          "title": "The Secret Garden",
-          "type": "sensory",
-          "typeLabel": "Sensory",
+          "title": "The Best Medicine",
+          "type": "cooperative",
+          "typeLabel": "Cooperative",
           "character": {
             "name": "Chopper",
             "icon": "🩺",
             "color": "#ec4899"
           },
-          "stationIntro": "I'm Chopper, the ship's doctor! I was a reindeer but I ate a magic fruit and now I can talk. I need your help to find secret medicines.",
-          "location": "Table or Floor (Shade)",
-          "objective": "Guess objects using only touch",
-          "description": "Guess hidden objects in a box using only touch.",
+          "stationIntro": "I'm Chopper, the ship's doctor! I was a reindeer but I ate a magic fruit and now I can talk. The captain needs a special medicine... a dose of SMILES!",
+          "location": "Around Arturo",
+          "objective": "Make Arturo laugh",
+          "description": "Dr. Chopper prescribes the best medicine: laughter! The crew must work together to make the birthday captain smile.",
           "materials": [
-            "Closed box with hand holes",
-            "Objects with different textures: pinecone, cotton, rocks, sandpaper, sponge, feather"
+            "Funny faces",
+            "Silly dances",
+            "Funny noises"
           ],
           "steps": [
             {
-              "name": "Hidden Ingredients",
-              "instruction": "The objects are hidden inside the box"
-            },
-            {
               "name": "The Diagnosis",
-              "instruction": "Without looking, the pirate puts their hand through the hole"
+              "instruction": "Dr. Chopper announces: 'The captain needs medicine! The best medicine is... LAUGHTER!'"
             },
             {
-              "name": "Guessing",
-              "instruction": "Only by touching, must shout what the object is (ex: 'It's a cotton cloud!', 'It's a rough rock!')"
+              "name": "The Treatment",
+              "instruction": "Each pirate takes turns trying to make Arturo laugh: funny faces, silly dances, gentle tickles, funny sounds!"
+            },
+            {
+              "name": "The Cure",
+              "instruction": "When Arturo laughs, everyone celebrates! 'The medicine worked! The captain is cured!'"
             }
           ],
-          "duration": "10 minutes",
+          "duration": "5 minutes",
           "difficulty": "easy",
           "minPlayers": 1,
-          "maxPlayers": 6
+          "maxPlayers": 15,
+          "tips": [
+            "Everyone can try at the same time if needed",
+            "Celebrate every smile and giggle",
+            "This is a great moment for photos!"
+          ]
         },
         {
           "id": "8",
