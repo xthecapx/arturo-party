@@ -46,14 +46,23 @@ function getOrderedActivities(party: PartyData, crew: CrewType): FlatActivity[] 
   // Phase 1 (Grand Line) - Different order based on crew
   const phase1 = party.phases.find(p => p.id === "phase_1");
   if (phase1) {
-    // Separate finale (activity 11) from the rest
-    const finaleActivity = phase1.activities.find(a => a.id === "11");
-    const mainActivities = phase1.activities.filter(a => a.id !== "11");
+    // Separate activities by location:
+    // Salon activities: 1-5 (Luffy, Zoro, Franky, Nami, Brook)
+    // Park activities: 6-10 (Usopp, Sanji, Chopper, Robin, Jimbei)
+    // Finale: 11
+    const salonIds = ["1", "2", "3", "4", "5"];
+    const parkIds = ["6", "7", "8", "9", "10"];
     
-    // Order main activities based on crew
+    const salonActivities = phase1.activities.filter(a => salonIds.includes(a.id));
+    const parkActivities = phase1.activities.filter(a => parkIds.includes(a.id));
+    const finaleActivity = phase1.activities.find(a => a.id === "11");
+    
+    // Order based on crew:
+    // Straw Hat: Salon first (1-5), then Park (6-10)
+    // Heart Pirates: Park first (6-10), then Salon (1-5)
     const orderedMain = crew === "heart-pirates" 
-      ? [...mainActivities].reverse() 
-      : mainActivities;
+      ? [...parkActivities, ...salonActivities]
+      : [...salonActivities, ...parkActivities];
     
     for (const activity of orderedMain) {
       flat.push({ activity, phase: phase1, globalIndex });

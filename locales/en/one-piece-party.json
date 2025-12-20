@@ -176,7 +176,7 @@
             "color": "#dc2626"
           },
           "stationIntro": "I'm Luffy, and I'm gonna be King of the Pirates! My body is made of rubber and I can stretch reaaally far. Let's fly up to the clouds!",
-          "location": "Garden / Open Space",
+          "location": "Living Room",
           "objective": "Work together to launch the balloon as high as possible",
           "description": "Use a giant blanket as a parachute to launch a balloon and touch a 'giant's' hand.",
           "materials": [
@@ -214,7 +214,7 @@
             "color": "#16a34a"
           },
           "stationIntro": "I'm Zoro, the world's greatest swordsman... but I always get lost! Let's spin around and see if you can walk straight better than me. Use the swords you got when you arrived!",
-          "location": "Garden / Open Space",
+          "location": "Living Room",
           "objective": "Maintain balance after getting dizzy and knock down targets",
           "description": "Spin 3 times to get dizzy and walk straight to knock down bottles with the balloon sword.",
           "materials": [
@@ -252,100 +252,6 @@
         },
         {
           "id": "3",
-          "title": "The Sniper's Rings",
-          "type": "accuracy",
-          "typeLabel": "Accuracy (Throwing)",
-          "character": {
-            "name": "Usopp",
-            "icon": "🎯",
-            "color": "#ca8a04"
-          },
-          "stationIntro": "I am the great Captain Usopp, the bravest sniper on the seas! Well... sometimes I get a little scared. But my aim is perfect! Can you land as many rings as me?",
-          "location": "Open area",
-          "objective": "Land as many rings as possible together",
-          "description": "Throw rings at the sticks trying to land as many as possible. All together as a crew!",
-          "materials": [
-            "Sticks or stakes stuck in the ground (5-6)",
-            "Plastic or rope rings (10-15)"
-          ],
-          "steps": [
-            {
-              "name": "Set Up the Field",
-              "instruction": "Stick the poles in the ground at different distances. Mark a throwing line."
-            },
-            {
-              "name": "Hand Out the Rings",
-              "instruction": "Each pirate receives 2-3 rings to throw. Remind them: 'It's not a competition! We're a crew and we want to land ALL the rings together.'"
-            },
-            {
-              "name": "Let's Throw!",
-              "instruction": "Taking turns, each pirate throws their rings trying to land them on the sticks. Others cheer: 'You can do it!'"
-            },
-            {
-              "name": "Count Together",
-              "instruction": "At the end, count ALL the rings landed by the whole crew. Celebrate the group result: 'Together we got X rings!'"
-            }
-          ],
-          "tips": [
-            "Adjust the distance based on children's age",
-            "If a child doesn't land any, encourage them and let them try closer",
-            "Always emphasize that the result belongs to EVERYONE, not individual"
-          ],
-          "shout": "Hissatsu: Firebird Star!",
-          "duration": "10 minutes",
-          "difficulty": "easy",
-          "minPlayers": 2,
-          "maxPlayers": 10
-        },
-        {
-          "id": "4",
-          "title": "The Fire Kick",
-          "type": "power",
-          "typeLabel": "Power (Kick)",
-          "character": {
-            "name": "Sanji",
-            "icon": "🦵",
-            "color": "#2563eb"
-          },
-          "stationIntro": "I'm Sanji, the ship's cook. My hands are only for cooking, but my kicks are so strong they catch fire! Can you knock down the cups with just one kick?",
-          "location": "Open area",
-          "objective": "Knock down plastic cups using only legs",
-          "description": "Use your legs to knock down a tower of plastic cups. Like Sanji's fire kicks!",
-          "materials": [
-            "Plastic cups (15-20)",
-            "Low table or surface to stack the cups"
-          ],
-          "steps": [
-            {
-              "name": "The Ingredient Tower",
-              "instruction": "Stack the plastic cups forming a pyramid or tower on a low table or the ground"
-            },
-            {
-              "name": "Combat Position",
-              "instruction": "The pirate stands in front of the tower. Remind them: 'Sanji only uses his legs! Hands are for cooking, not fighting.'"
-            },
-            {
-              "name": "Diable Jambe!",
-              "instruction": "With one kick, the pirate tries to knock down as many cups as possible. Shout 'Diable Jambe!' when kicking!"
-            },
-            {
-              "name": "Rebuild Together",
-              "instruction": "Everyone helps stack the cups again for the next pirate. The crew helps each other!"
-            }
-          ],
-          "tips": [
-            "Adjust the tower height based on child's age",
-            "If a child has difficulty, move the tower closer",
-            "Everyone helps pick up and stack - teamwork"
-          ],
-          "shout": "Diable Jambe!",
-          "duration": "10 minutes",
-          "difficulty": "easy",
-          "minPlayers": 2,
-          "maxPlayers": 8
-        },
-        {
-          "id": "5",
           "title": "Emergency Repairs",
           "type": "speed",
           "typeLabel": "Speed",
@@ -355,7 +261,7 @@
             "color": "#0891b2"
           },
           "stationIntro": "SUPER! I'm Franky, I'm half robot and I built the coolest ship in the world. But it has holes! Help me fix it before it sinks!",
-          "location": "Outdoor Area (where floor can get wet)",
+          "location": "Living Room",
           "objective": "Repair the ship before it sinks",
           "description": "Run to patch holes in a bucket with stickers before it fills with water.",
           "materials": [
@@ -384,7 +290,7 @@
           "maxPlayers": 8
         },
         {
-          "id": "6",
+          "id": "4",
           "title": "The Storm Tale",
           "type": "interactive",
           "typeLabel": "Interactive Story",
@@ -394,7 +300,7 @@
             "color": "#f97316"
           },
           "stationIntro": "I'm Nami, the navigator! I can predict the weather just by smelling it. A terrible storm is coming! Are you ready to survive?",
-          "location": "Quiet Area / Sitting Circle",
+          "location": "Living Room",
           "objective": "React to keywords with movements",
           "description": "Children react to keywords (Wave, Lightning, Cyclone) with physical movements.",
           "materials": [
@@ -409,7 +315,7 @@
               },
               {
                 "trigger": "LIGHTNING!",
-                "action": "To the ground and cover"
+                "action": "Hands on head"
               },
               {
                 "trigger": "CYCLONE!",
@@ -431,106 +337,7 @@
           "maxPlayers": 20
         },
         {
-          "id": "7",
-          "title": "The Best Medicine",
-          "type": "cooperative",
-          "typeLabel": "Cooperative",
-          "character": {
-            "name": "Chopper",
-            "icon": "🩺",
-            "color": "#ec4899"
-          },
-          "stationIntro": "I'm Chopper, the ship's doctor! I was a reindeer but I ate a magic fruit and now I can talk. The captain needs a special medicine... a dose of SMILES!",
-          "location": "Around Arturo",
-          "objective": "Make Arturo laugh",
-          "description": "Dr. Chopper prescribes the best medicine: laughter! The crew must work together to make the birthday captain smile.",
-          "materials": [
-            "Funny faces",
-            "Silly dances",
-            "Funny noises"
-          ],
-          "steps": [
-            {
-              "name": "The Diagnosis",
-              "instruction": "Dr. Chopper announces: 'The captain needs medicine! The best medicine is... LAUGHTER!'"
-            },
-            {
-              "name": "The Treatment",
-              "instruction": "Each pirate takes turns trying to make Arturo laugh: funny faces, silly dances, gentle tickles, funny sounds!"
-            },
-            {
-              "name": "The Cure",
-              "instruction": "When Arturo laughs, everyone celebrates! 'The medicine worked! The captain is cured!'"
-            }
-          ],
-          "duration": "5 minutes",
-          "difficulty": "easy",
-          "minPlayers": 1,
-          "maxPlayers": 15,
-          "tips": [
-            "Everyone can try at the same time if needed",
-            "Celebrate every smile and giggle",
-            "This is a great moment for photos!"
-          ]
-        },
-        {
-          "id": "8",
-          "title": "The Crew's Treasure",
-          "type": "teamwork",
-          "typeLabel": "Search and Teamwork",
-          "character": {
-            "name": "Robin",
-            "icon": "📚",
-            "color": "#7c3aed"
-          },
-          "stationIntro": "I'm Robin, the archaeologist. I've discovered that there are 4 treasure chests hidden around here. But remember, pirates... a true crew always shares the loot!",
-          "location": "Bounded area (with hiding spots)",
-          "objective": "Find the chests and learn to share like true pirates",
-          "description": "Search for 4 hidden treasure chests, bring them to the center, and decide together how to split the loot fairly.",
-          "materials": [
-            "4 small decorated chests or boxes",
-            "Treasure to share (candy, gummies, small toys)",
-            "Table or central area to gather the chests"
-          ],
-          "steps": [
-            {
-              "name": "The Mission",
-              "instruction": "Explain: 'There are 4 treasure chests hidden. You have to find them all and bring them to the center! But careful... don't open them yet!'"
-            },
-            {
-              "name": "The Search",
-              "instruction": "The children spread out to find the 4 chests. When they find one, they bring it to the center, and must shout: 'I'm a pirate who found a treasure!' and keep searching until all 4 are found."
-            },
-            {
-              "name": "The Gathering",
-              "instruction": "When all 4 chests are there, gather everyone in a circle. Ask: 'Who found each chest?' Celebrate everyone who searched."
-            },
-            {
-              "name": "The Pirate Lesson",
-              "instruction": "Explain: 'In a real pirate crew, the treasure is NOT just for the one who finds it. It belongs to the WHOLE crew! Why? Because EVERYONE worked together to get it.'"
-            },
-            {
-              "name": "The Fair Split",
-              "instruction": "Open the chests and show the treasure. Ask the children: 'How do we split it so it's fair for everyone?' Guide them until they decide to share equally."
-            },
-            {
-              "name": "The Pirate Code",
-              "instruction": "Everyone repeats: 'We are a crew! We share the treasure!' Then distribute the loot equally among everyone."
-            }
-          ],
-          "shout": "We are a crew!",
-          "tips": [
-            "Prepare the treasure so it can be easily divided among all children",
-            "If a child wants to keep more, gently remind them that pirates share",
-            "Celebrate when they decide to share fairly"
-          ],
-          "duration": "15 minutes",
-          "difficulty": "easy",
-          "minPlayers": 4,
-          "maxPlayers": 15
-        },
-        {
-          "id": "9",
+          "id": "5",
           "title": "The Binks' Sake Orchestra",
           "type": "rhythm",
           "typeLabel": "Rhythm and Memory",
@@ -540,7 +347,7 @@
             "color": "#1f2937"
           },
           "stationIntro": "YOHOHO! I'm Brook, a skeleton musician. I died but came back to life thanks to a magic fruit! Want to play music with me? I'm so excited I get goosebumps... even though I have no skin! YOHOHO!",
-          "location": "Central Space",
+          "location": "Living Room",
           "objective": "Repeat the rhythms correctly",
           "description": "Rhythm imitation game (claps, feet) guided by an adult.",
           "materials": [
@@ -591,6 +398,199 @@
           "maxPlayers": 20
         },
         {
+          "id": "6",
+          "title": "The Sniper's Rings",
+          "type": "accuracy",
+          "typeLabel": "Accuracy (Throwing)",
+          "character": {
+            "name": "Usopp",
+            "icon": "🎯",
+            "color": "#ca8a04"
+          },
+          "stationIntro": "I am the great Captain Usopp, the bravest sniper on the seas! Well... sometimes I get a little scared. But my aim is perfect! Can you land as many rings as me?",
+          "location": "Park",
+          "objective": "Land as many rings as possible together",
+          "description": "Throw rings at the sticks trying to land as many as possible. All together as a crew!",
+          "materials": [
+            "Sticks or stakes stuck in the ground (5-6)",
+            "Plastic or rope rings (10-15)"
+          ],
+          "steps": [
+            {
+              "name": "Set Up the Field",
+              "instruction": "Stick the poles in the ground at different distances. Mark a throwing line."
+            },
+            {
+              "name": "Hand Out the Rings",
+              "instruction": "Each pirate receives 2-3 rings to throw. Remind them: 'It's not a competition! We're a crew and we want to land ALL the rings together.'"
+            },
+            {
+              "name": "Let's Throw!",
+              "instruction": "Taking turns, each pirate throws their rings trying to land them on the sticks. Others cheer: 'You can do it!'"
+            },
+            {
+              "name": "Count Together",
+              "instruction": "At the end, count ALL the rings landed by the whole crew. Celebrate the group result: 'Together we got X rings!'"
+            }
+          ],
+          "tips": [
+            "Adjust the distance based on children's age",
+            "If a child doesn't land any, encourage them and let them try closer",
+            "Always emphasize that the result belongs to EVERYONE, not individual"
+          ],
+          "shout": "Hissatsu: Firebird Star!",
+          "duration": "5 minutes",
+          "difficulty": "easy",
+          "minPlayers": 2,
+          "maxPlayers": 10
+        },
+        {
+          "id": "7",
+          "title": "The Fire Kick",
+          "type": "power",
+          "typeLabel": "Power (Kick)",
+          "character": {
+            "name": "Sanji",
+            "icon": "🦵",
+            "color": "#2563eb"
+          },
+          "stationIntro": "I'm Sanji, the ship's cook. My hands are only for cooking, but my kicks are so strong they catch fire! Can you knock down the cups with just one kick?",
+          "location": "Park",
+          "objective": "Knock down plastic cups using only legs",
+          "description": "Use your legs to knock down a tower of plastic cups. Like Sanji's fire kicks!",
+          "materials": [
+            "Plastic cups (15-20)",
+            "Low table or surface to stack the cups"
+          ],
+          "steps": [
+            {
+              "name": "The Ingredient Tower",
+              "instruction": "Stack the plastic cups forming a pyramid or tower on a low table or the ground"
+            },
+            {
+              "name": "Combat Position",
+              "instruction": "The pirate stands in front of the tower. Remind them: 'Sanji only uses his legs! Hands are for cooking, not fighting.'"
+            },
+            {
+              "name": "Diable Jambe!",
+              "instruction": "With one kick, the pirate tries to knock down as many cups as possible. Shout 'Diable Jambe!' when kicking!"
+            },
+            {
+              "name": "Rebuild Together",
+              "instruction": "Everyone helps stack the cups again for the next pirate. The crew helps each other!"
+            }
+          ],
+          "tips": [
+            "Adjust the tower height based on child's age",
+            "If a child has difficulty, move the tower closer",
+            "Everyone helps pick up and stack - teamwork"
+          ],
+          "shout": "Diable Jambe!",
+          "duration": "10 minutes",
+          "difficulty": "easy",
+          "minPlayers": 2,
+          "maxPlayers": 8
+        },
+        {
+          "id": "8",
+          "title": "The Best Medicine",
+          "type": "cooperative",
+          "typeLabel": "Cooperative",
+          "character": {
+            "name": "Chopper",
+            "icon": "🩺",
+            "color": "#ec4899"
+          },
+          "stationIntro": "I'm Chopper, the ship's doctor! I was a reindeer but I ate a magic fruit and now I can talk. The captain needs a special medicine... a dose of SMILES!",
+          "location": "Park",
+          "objective": "Make Arturo laugh",
+          "description": "Dr. Chopper prescribes the best medicine: laughter! The crew must work together to make the birthday captain smile.",
+          "materials": [
+            "Funny faces",
+            "Silly dances",
+            "Funny noises"
+          ],
+          "steps": [
+            {
+              "name": "The Diagnosis",
+              "instruction": "Dr. Chopper announces: 'The captain needs medicine! The best medicine is... LAUGHTER!'"
+            },
+            {
+              "name": "The Treatment",
+              "instruction": "Each pirate tries to make Arturo laugh: funny faces, silly dances, funny sounds! No touching!"
+            },
+            {
+              "name": "The Cure",
+              "instruction": "When Arturo laughs, everyone celebrates! 'The medicine worked! The captain is cured!'"
+            }
+          ],
+          "duration": "5 minutes",
+          "difficulty": "easy",
+          "minPlayers": 1,
+          "maxPlayers": 15,
+          "tips": [
+            "Everyone can try at the same time if needed",
+            "Celebrate every smile and giggle",
+            "This is a great moment for photos!"
+          ]
+        },
+        {
+          "id": "9",
+          "title": "The Crew's Treasure",
+          "type": "teamwork",
+          "typeLabel": "Search and Teamwork",
+          "character": {
+            "name": "Robin",
+            "icon": "📚",
+            "color": "#7c3aed"
+          },
+          "stationIntro": "I'm Robin, the archaeologist. I've discovered that there are 4 treasure chests hidden around here. But remember, pirates... a true crew always shares the loot!",
+          "location": "Park",
+          "objective": "Find the chests and learn to share like true pirates",
+          "description": "Search for 4 hidden treasure chests, bring them to the center, and decide together how to split the loot fairly.",
+          "materials": [
+            "4 small decorated chests or boxes",
+            "Treasure to share (candy, gummies, small toys)",
+            "Table or central area to gather the chests"
+          ],
+          "steps": [
+            {
+              "name": "The Mission",
+              "instruction": "Explain: 'There are 4 treasure chests hidden. You have to find them all and bring them to the center! But careful... don't open them yet!'"
+            },
+            {
+              "name": "The Search",
+              "instruction": "The children spread out to find the 4 chests. When they find one, they bring it to the center, and must shout: 'I'm a pirate who found a treasure!' and keep searching until all 4 are found."
+            },
+            {
+              "name": "The Gathering",
+              "instruction": "When all 4 chests are there, gather everyone in a circle. Ask: 'Who found each chest?' Celebrate everyone who searched."
+            },
+            {
+              "name": "The Pirate Lesson",
+              "instruction": "Explain: 'In a real pirate crew, the treasure is NOT just for the one who finds it. It belongs to the WHOLE crew! Why? Because EVERYONE worked together to get it.'"
+            },
+            {
+              "name": "The Fair Split",
+              "instruction": "Open the chests and show the treasure. Ask the children: 'How do we split it so it's fair for everyone?' Guide them until they decide to share equally."
+            },
+            {
+              "name": "The Pirate Code",
+              "instruction": "Everyone repeats: 'We are a crew! We share the treasure!' Then distribute the loot equally among everyone."
+            }
+          ],
+          "shout": "We are a crew!",
+          "tips": [
+            "Prepare the treasure so it can be easily divided among all children",
+            "If a child wants to keep more, gently remind them that pirates share",
+            "Celebrate when they decide to share fairly"
+          ],
+          "duration": "15 minutes",
+          "difficulty": "easy",
+          "minPlayers": 4,
+          "maxPlayers": 15
+        },
+        {
           "id": "10",
           "title": "The Treasure Race",
           "type": "relay",
@@ -601,13 +601,13 @@
             "color": "#0284c7"
           },
           "stationIntro": "I'm Jimbei, a fish-man. I can swim faster than anyone and control water. Let's see who can transport the most water without spilling!",
-          "location": "Outdoor (Grass)",
+          "location": "Park",
           "objective": "Transport as much water as possible",
           "description": "Transport water from one bucket to another using giant sponges.",
           "materials": [
-            "4 buckets (2 full, 2 empty)",
-            "2 large sponges",
-            "Water"
+            "1 bucket with water",
+            "2 empty cups",
+            "1 large sponge"
           ],
           "steps": [
             {
@@ -731,9 +731,9 @@
       }
     ],
     "rotationTips": [
-      "Alternate teams at stations to avoid waiting",
-      "Cooperative activities (1, 6, 9, 11) can be done together",
-      "Individual activities (2, 3, 4, 7) work better in small groups"
+      "Straw Hat: starts in Living Room (1-5), then Park (6-10)",
+      "Heart Pirates: starts in Park (10-6), then Living Room (5-1)",
+      "Both crews meet at the Grand Finale (11)"
     ]
   },
   "guestList": {

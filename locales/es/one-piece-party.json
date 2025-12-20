@@ -176,7 +176,7 @@
             "color": "#dc2626"
           },
           "stationIntro": "¡Yo soy Luffy, y seré el Rey de los Piratas! Mi cuerpo es de goma y puedo estirarme muuucho. ¡Vamos a volar hasta las nubes!",
-          "location": "Jardín / Espacio Abierto",
+          "location": "Salón",
           "objective": "Trabajar en equipo para lanzar el globo lo más alto posible",
           "description": "Usar una manta gigante como paracaídas para lanzar un globo y tocar la mano de un 'gigante'.",
           "materials": [
@@ -214,7 +214,7 @@
             "color": "#16a34a"
           },
           "stationIntro": "Soy Zoro, el mejor espadachín del mundo... ¡pero siempre me pierdo! Vamos a dar vueltas y ver si podéis caminar recto mejor que yo. ¡Usad las espadas que os hicieron al llegar!",
-          "location": "Jardín / Espacio Abierto",
+          "location": "Salón",
           "objective": "Mantener el equilibrio después de marearse y derribar objetivos",
           "description": "Dar 3 vueltas para marearse y caminar recto para derribar botellas con la espada de globo.",
           "materials": [
@@ -252,100 +252,6 @@
         },
         {
           "id": "3",
-          "title": "Los Aros del Francotirador",
-          "type": "accuracy",
-          "typeLabel": "Puntería (Lanzamiento)",
-          "character": {
-            "name": "Usopp",
-            "icon": "🎯",
-            "color": "#ca8a04"
-          },
-          "stationIntro": "¡Yo soy el gran Capitán Usopp, el francotirador más valiente de los mares! Bueno... a veces tengo un poquito de miedo. ¡Pero mi puntería es perfecta! ¿Podéis encestar tantos aros como yo?",
-          "location": "Zona abierta",
-          "objective": "Encestar la mayor cantidad de aros entre todos",
-          "description": "Lanzar aros a los palos intentando encestar el máximo posible. ¡Todos juntos como tripulación!",
-          "materials": [
-            "Palos o estacas clavados en el suelo (5-6)",
-            "Aros de plástico o cuerda (10-15)"
-          ],
-          "steps": [
-            {
-              "name": "Preparar el Campo",
-              "instruction": "Clavar los palos en el suelo a diferentes distancias. Marcar una línea de lanzamiento."
-            },
-            {
-              "name": "Repartir los Aros",
-              "instruction": "Cada pirata recibe 2-3 aros para lanzar. Recordar: '¡No es una competición! Somos una tripulación y queremos encestar TODOS los aros posibles juntos.'"
-            },
-            {
-              "name": "¡A Lanzar!",
-              "instruction": "Por turnos, cada pirata lanza sus aros intentando encestarlos en los palos. Los demás animan: '¡Tú puedes!'"
-            },
-            {
-              "name": "Contar Juntos",
-              "instruction": "Al final, contar TODOS los aros encestados entre toda la tripulación. Celebrar el resultado grupal: '¡Entre todos conseguimos X aros!'"
-            }
-          ],
-          "tips": [
-            "Ajustar la distancia según la edad de los niños",
-            "Si un niño no encesta ninguno, animarle y dejarle intentar más cerca",
-            "Enfatizar siempre que el resultado es DE TODOS, no individual"
-          ],
-          "shout": "¡Hissatsu: Firebird Star!",
-          "duration": "10 minutos",
-          "difficulty": "easy",
-          "minPlayers": 2,
-          "maxPlayers": 10
-        },
-        {
-          "id": "4",
-          "title": "La Patada de Fuego",
-          "type": "power",
-          "typeLabel": "Potencia (Patada)",
-          "character": {
-            "name": "Sanji",
-            "icon": "🦵",
-            "color": "#2563eb"
-          },
-          "stationIntro": "Soy Sanji, el cocinero del barco. Mis manos son solo para cocinar, ¡pero mis patadas son tan fuertes que encienden fuego! ¿Podéis derribar los vasos con una sola patada?",
-          "location": "Zona abierta",
-          "objective": "Derribar los vasos de plástico usando solo las piernas",
-          "description": "Usar las piernas para derribar una torre de vasos de plástico. ¡Como las patadas de fuego de Sanji!",
-          "materials": [
-            "Vasos de plástico (15-20)",
-            "Mesa baja o superficie para apilar los vasos"
-          ],
-          "steps": [
-            {
-              "name": "La Torre de Ingredientes",
-              "instruction": "Apilar los vasos de plástico formando una pirámide o torre sobre la mesa baja o el suelo"
-            },
-            {
-              "name": "Posición de Combate",
-              "instruction": "El pirata se coloca frente a la torre. Recordar: '¡Sanji solo usa las piernas! Las manos son para cocinar, no para pelear.'"
-            },
-            {
-              "name": "¡Diable Jambe!",
-              "instruction": "Con una patada, el pirata intenta derribar todos los vasos posibles. ¡Gritar '¡Diable Jambe!' al patear!"
-            },
-            {
-              "name": "Reconstruir Juntos",
-              "instruction": "Entre todos vuelven a apilar los vasos para el siguiente pirata. ¡La tripulación se ayuda!"
-            }
-          ],
-          "tips": [
-            "Ajustar la altura de la torre según la edad del niño",
-            "Si un niño tiene dificultad, acercar la torre",
-            "Todos ayudan a recoger y apilar - trabajo en equipo"
-          ],
-          "shout": "¡Diable Jambe!",
-          "duration": "10 minutos",
-          "difficulty": "easy",
-          "minPlayers": 2,
-          "maxPlayers": 8
-        },
-        {
-          "id": "5",
           "title": "La Reparación de Emergencia",
           "type": "speed",
           "typeLabel": "Velocidad",
@@ -355,7 +261,7 @@
             "color": "#0891b2"
           },
           "stationIntro": "¡SUPER! Soy Franky, soy mitad robot y construí el barco más genial del mundo. ¡Pero tiene agujeros! ¡Ayudadme a repararlo antes de que se hunda!",
-          "location": "Zona Exterior (donde se pueda mojar)",
+          "location": "Salón",
           "objective": "Reparar el barco antes de que se hunda",
           "description": "Correr para tapar agujeros de un balde con stickers antes de que se llene de agua.",
           "materials": [
@@ -384,7 +290,7 @@
           "maxPlayers": 8
         },
         {
-          "id": "6",
+          "id": "4",
           "title": "El Cuento de la Tormenta",
           "type": "interactive",
           "typeLabel": "Cuento Interactivo",
@@ -394,7 +300,7 @@
             "color": "#f97316"
           },
           "stationIntro": "¡Soy Nami, la navegante! Puedo predecir el clima solo con olerlo. ¡Se acerca una tormenta terrible! ¿Estáis listos para sobrevivir?",
-          "location": "Zona Tranquila / Círculo sentados",
+          "location": "Salón",
           "objective": "Reaccionar a las palabras clave con movimientos",
           "description": "Los niños reaccionan a palabras clave (Ola, Rayo, Ciclón) con movimientos físicos.",
           "materials": [
@@ -409,7 +315,7 @@
               },
               {
                 "trigger": "¡RAYO!",
-                "action": "Al suelo y cubrirse"
+                "action": "Manos a la cabeza"
               },
               {
                 "trigger": "¡CICLÓN!",
@@ -431,106 +337,7 @@
           "maxPlayers": 20
         },
         {
-          "id": "7",
-          "title": "La Mejor Medicina",
-          "type": "cooperative",
-          "typeLabel": "Cooperativo",
-          "character": {
-            "name": "Chopper",
-            "icon": "🩺",
-            "color": "#ec4899"
-          },
-          "stationIntro": "¡Soy Chopper, el doctor del barco! Era un reno pero comí una fruta mágica y ahora puedo hablar. El capitán necesita una medicina especial... ¡una dosis de SONRISAS!",
-          "location": "Alrededor de Arturo",
-          "objective": "Hacer reír a Arturo",
-          "description": "El Dr. Chopper receta la mejor medicina: ¡la risa! La tripulación debe trabajar juntos para hacer sonreír al capitán del cumpleaños.",
-          "materials": [
-            "Caras graciosas",
-            "Bailes tontos",
-            "Sonidos graciosos"
-          ],
-          "steps": [
-            {
-              "name": "El Diagnóstico",
-              "instruction": "El Dr. Chopper anuncia: '¡El capitán necesita medicina! La mejor medicina es... ¡LA RISA!'"
-            },
-            {
-              "name": "El Tratamiento",
-              "instruction": "Cada pirata intenta hacer reír a Arturo: ¡caras graciosas, bailes tontos, cosquillitas suaves, sonidos divertidos!"
-            },
-            {
-              "name": "La Cura",
-              "instruction": "Cuando Arturo se ría, ¡todos celebran! '¡La medicina funcionó! ¡El capitán está curado!'"
-            }
-          ],
-          "duration": "5 minutos",
-          "difficulty": "easy",
-          "minPlayers": 1,
-          "maxPlayers": 15,
-          "tips": [
-            "Todos pueden intentarlo al mismo tiempo si es necesario",
-            "Celebra cada sonrisa y risita",
-            "¡Este es un gran momento para fotos!"
-          ]
-        },
-        {
-          "id": "8",
-          "title": "El Tesoro de la Tripulación",
-          "type": "teamwork",
-          "typeLabel": "Búsqueda y Trabajo en Equipo",
-          "character": {
-            "name": "Robin",
-            "icon": "📚",
-            "color": "#7c3aed"
-          },
-          "stationIntro": "Soy Robin, la arqueóloga. He descubierto que hay 4 cofres del tesoro escondidos por aquí. ¡Pero recuerden, piratas... una tripulación de verdad siempre comparte el botín!",
-          "location": "Zona delimitada (con lugares para esconder)",
-          "objective": "Encontrar los cofres y aprender a compartir como verdaderos piratas",
-          "description": "Buscar 4 cofres del tesoro escondidos, traerlos al centro y decidir juntos cómo repartir el botín de forma justa.",
-          "materials": [
-            "4 cofres o cajas pequeñas decoradas",
-            "Tesoro para repartir (caramelos, gomitas, pequeños juguetes)",
-            "Mesa o zona central para reunir los cofres"
-          ],
-          "steps": [
-            {
-              "name": "La Misión",
-              "instruction": "Explicar: 'Hay 4 cofres del tesoro escondidos. ¡Tenéis que encontrarlos todos y traerlos al centro! Pero ojo... ¡no los abráis todavía!'"
-            },
-            {
-              "name": "La Búsqueda",
-              "instruction": "Los niños se dispersan a buscar los 4 cofres. Cuando encuentran uno, lo traen al centro, y deben gritar: 'Soy un pirata que encontró un tesoro!' y siguen buscando hasta encontrar los 4."
-            },
-            {
-              "name": "La Reunión",
-              "instruction": "Cuando están los 4 cofres, reunir a todos en círculo. Preguntar: '¿Quién encontró cada cofre?' Celebrar a todos los que buscaron."
-            },
-            {
-              "name": "La Lección Pirata",
-              "instruction": "Explicar: 'En una tripulación pirata de verdad, el tesoro NO es solo del que lo encuentra. ¡Es de TODA la tripulación! ¿Por qué? Porque TODOS trabajaron juntos para conseguirlo.'"
-            },
-            {
-              "name": "El Reparto Justo",
-              "instruction": "Abrir los cofres y mostrar el tesoro. Preguntar a los niños: '¿Cómo lo repartimos para que sea justo para todos?' Guiarlos hasta que decidan repartir equitativamente."
-            },
-            {
-              "name": "El Código Pirata",
-              "instruction": "Todos repiten: '¡Somos una tripulación! ¡Compartimos el tesoro!' Luego repartir el botín de forma equitativa entre todos."
-            }
-          ],
-          "shout": "¡Somos una tripulación!",
-          "tips": [
-            "Preparar el tesoro para que se pueda dividir fácilmente entre todos los niños",
-            "Si un niño quiere quedarse con más, recordar suavemente que los piratas comparten",
-            "Celebrar cuando decidan compartir de forma justa"
-          ],
-          "duration": "15 minutos",
-          "difficulty": "easy",
-          "minPlayers": 4,
-          "maxPlayers": 15
-        },
-        {
-          "id": "9",
+          "id": "5",
           "title": "La Orquesta del Binks' Sake",
           "type": "rhythm",
           "typeLabel": "Ritmo y Memoria",
@@ -540,7 +347,7 @@
             "color": "#1f2937"
           },
           "stationIntro": "¡YOHOHO! Soy Brook, un esqueleto músico. ¡Morí pero reviví gracias a una fruta mágica! ¿Queréis tocar música conmigo? ¡Me emociono tanto que se me pone la piel de gallina... aunque no tengo piel! ¡YOHOHO!",
-          "location": "Espacio Central",
+          "location": "Salón",
           "objective": "Repetir los ritmos correctamente",
           "description": "Juego de imitación de ritmos (aplausos, pies) guiado por un adulto.",
           "materials": [
@@ -591,6 +398,199 @@
           "maxPlayers": 20
         },
         {
+          "id": "6",
+          "title": "Los Aros del Francotirador",
+          "type": "accuracy",
+          "typeLabel": "Puntería (Lanzamiento)",
+          "character": {
+            "name": "Usopp",
+            "icon": "🎯",
+            "color": "#ca8a04"
+          },
+          "stationIntro": "¡Yo soy el gran Capitán Usopp, el francotirador más valiente de los mares! Bueno... a veces tengo un poquito de miedo. ¡Pero mi puntería es perfecta! ¿Podéis encestar tantos aros como yo?",
+          "location": "Parque",
+          "objective": "Encestar la mayor cantidad de aros entre todos",
+          "description": "Lanzar aros a los palos intentando encestar el máximo posible. ¡Todos juntos como tripulación!",
+          "materials": [
+            "Palos o estacas clavados en el suelo (5-6)",
+            "Aros de plástico o cuerda (10-15)"
+          ],
+          "steps": [
+            {
+              "name": "Preparar el Campo",
+              "instruction": "Clavar los palos en el suelo a diferentes distancias. Marcar una línea de lanzamiento."
+            },
+            {
+              "name": "Repartir los Aros",
+              "instruction": "Cada pirata recibe 2-3 aros para lanzar. Recordar: '¡No es una competición! Somos una tripulación y queremos encestar TODOS los aros posibles juntos.'"
+            },
+            {
+              "name": "¡A Lanzar!",
+              "instruction": "Por turnos, cada pirata lanza sus aros intentando encestarlos en los palos. Los demás animan: '¡Tú puedes!'"
+            },
+            {
+              "name": "Contar Juntos",
+              "instruction": "Al final, contar TODOS los aros encestados entre toda la tripulación. Celebrar el resultado grupal: '¡Entre todos conseguimos X aros!'"
+            }
+          ],
+          "tips": [
+            "Ajustar la distancia según la edad de los niños",
+            "Si un niño no encesta ninguno, animarle y dejarle intentar más cerca",
+            "Enfatizar siempre que el resultado es DE TODOS, no individual"
+          ],
+          "shout": "¡Hissatsu: Firebird Star!",
+          "duration": "5 minutos",
+          "difficulty": "easy",
+          "minPlayers": 2,
+          "maxPlayers": 10
+        },
+        {
+          "id": "7",
+          "title": "La Patada de Fuego",
+          "type": "power",
+          "typeLabel": "Potencia (Patada)",
+          "character": {
+            "name": "Sanji",
+            "icon": "🦵",
+            "color": "#2563eb"
+          },
+          "stationIntro": "Soy Sanji, el cocinero del barco. Mis manos son solo para cocinar, ¡pero mis patadas son tan fuertes que encienden fuego! ¿Podéis derribar los vasos con una sola patada?",
+          "location": "Parque",
+          "objective": "Derribar los vasos de plástico usando solo las piernas",
+          "description": "Usar las piernas para derribar una torre de vasos de plástico. ¡Como las patadas de fuego de Sanji!",
+          "materials": [
+            "Vasos de plástico (15-20)",
+            "Mesa baja o superficie para apilar los vasos"
+          ],
+          "steps": [
+            {
+              "name": "La Torre de Ingredientes",
+              "instruction": "Apilar los vasos de plástico formando una pirámide o torre sobre la mesa baja o el suelo"
+            },
+            {
+              "name": "Posición de Combate",
+              "instruction": "El pirata se coloca frente a la torre. Recordar: '¡Sanji solo usa las piernas! Las manos son para cocinar, no para pelear.'"
+            },
+            {
+              "name": "¡Diable Jambe!",
+              "instruction": "Con una patada, el pirata intenta derribar todos los vasos posibles. ¡Gritar '¡Diable Jambe!' al patear!"
+            },
+            {
+              "name": "Reconstruir Juntos",
+              "instruction": "Entre todos vuelven a apilar los vasos para el siguiente pirata. ¡La tripulación se ayuda!"
+            }
+          ],
+          "tips": [
+            "Ajustar la altura de la torre según la edad del niño",
+            "Si un niño tiene dificultad, acercar la torre",
+            "Todos ayudan a recoger y apilar - trabajo en equipo"
+          ],
+          "shout": "¡Diable Jambe!",
+          "duration": "10 minutos",
+          "difficulty": "easy",
+          "minPlayers": 2,
+          "maxPlayers": 8
+        },
+        {
+          "id": "8",
+          "title": "La Mejor Medicina",
+          "type": "cooperative",
+          "typeLabel": "Cooperativo",
+          "character": {
+            "name": "Chopper",
+            "icon": "🩺",
+            "color": "#ec4899"
+          },
+          "stationIntro": "¡Soy Chopper, el doctor del barco! Era un reno pero comí una fruta mágica y ahora puedo hablar. El capitán necesita una medicina especial... ¡una dosis de SONRISAS!",
+          "location": "Parque",
+          "objective": "Hacer reír a Arturo",
+          "description": "El Dr. Chopper receta la mejor medicina: ¡la risa! La tripulación debe trabajar juntos para hacer sonreír al capitán del cumpleaños.",
+          "materials": [
+            "Caras graciosas",
+            "Bailes tontos",
+            "Sonidos graciosos"
+          ],
+          "steps": [
+            {
+              "name": "El Diagnóstico",
+              "instruction": "El Dr. Chopper anuncia: '¡El capitán necesita medicina! La mejor medicina es... ¡LA RISA!'"
+            },
+            {
+              "name": "El Tratamiento",
+              "instruction": "Cada pirata intenta hacer reír a Arturo: ¡caras graciosas, bailes tontos, sonidos divertidos! Sin Tocar!"
+            },
+            {
+              "name": "La Cura",
+              "instruction": "Cuando Arturo se ría, ¡todos celebran! '¡La medicina funcionó! ¡El capitán está curado!'"
+            }
+          ],
+          "duration": "5 minutos",
+          "difficulty": "easy",
+          "minPlayers": 1,
+          "maxPlayers": 15,
+          "tips": [
+            "Todos pueden intentarlo al mismo tiempo si es necesario",
+            "Celebra cada sonrisa y risita",
+            "¡Este es un gran momento para fotos!"
+          ]
+        },
+        {
+          "id": "9",
+          "title": "El Tesoro de la Tripulación",
+          "type": "teamwork",
+          "typeLabel": "Búsqueda y Trabajo en Equipo",
+          "character": {
+            "name": "Robin",
+            "icon": "📚",
+            "color": "#7c3aed"
+          },
+          "stationIntro": "Soy Robin, la arqueóloga. He descubierto que hay 4 cofres del tesoro escondidos por aquí. ¡Pero recuerden, piratas... una tripulación de verdad siempre comparte el botín!",
+          "location": "Parque",
+          "objective": "Encontrar los cofres y aprender a compartir como verdaderos piratas",
+          "description": "Buscar 4 cofres del tesoro escondidos, traerlos al centro y decidir juntos cómo repartir el botín de forma justa.",
+          "materials": [
+            "4 cofres o cajas pequeñas decoradas",
+            "Tesoro para repartir (caramelos, gomitas, pequeños juguetes)",
+            "Mesa o zona central para reunir los cofres"
+          ],
+          "steps": [
+            {
+              "name": "La Misión",
+              "instruction": "Explicar: 'Hay 4 cofres del tesoro escondidos. ¡Tenéis que encontrarlos todos y traerlos al centro! Pero ojo... ¡no los abráis todavía!'"
+            },
+            {
+              "name": "La Búsqueda",
+              "instruction": "Los niños se dispersan a buscar los 4 cofres. Cuando encuentran uno, lo traen al centro, y deben gritar: 'Soy un pirata que encontró un tesoro!' y siguen buscando hasta encontrar los 4."
+            },
+            {
+              "name": "La Reunión",
+              "instruction": "Cuando están los 4 cofres, reunir a todos en círculo. Preguntar: '¿Quién encontró cada cofre?' Celebrar a todos los que buscaron."
+            },
+            {
+              "name": "La Lección Pirata",
+              "instruction": "Explicar: 'En una tripulación pirata de verdad, el tesoro NO es solo del que lo encuentra. ¡Es de TODA la tripulación! ¿Por qué? Porque TODOS trabajaron juntos para conseguirlo.'"
+            },
+            {
+              "name": "El Reparto Justo",
+              "instruction": "Abrir los cofres y mostrar el tesoro. Preguntar a los niños: '¿Cómo lo repartimos para que sea justo para todos?' Guiarlos hasta que decidan repartir equitativamente."
+            },
+            {
+              "name": "El Código Pirata",
+              "instruction": "Todos repiten: '¡Somos una tripulación! ¡Compartimos el tesoro!' Luego repartir el botín de forma equitativa entre todos."
+            }
+          ],
+          "shout": "¡Somos una tripulación!",
+          "tips": [
+            "Preparar el tesoro para que se pueda dividir fácilmente entre todos los niños",
+            "Si un niño quiere quedarse con más, recordar suavemente que los piratas comparten",
+            "Celebrar cuando decidan compartir de forma justa"
+          ],
+          "duration": "15 minutos",
+          "difficulty": "easy",
+          "minPlayers": 4,
+          "maxPlayers": 15
+        },
+        {
           "id": "10",
           "title": "La Carrera del Tesoro",
           "type": "relay",
@@ -601,13 +601,13 @@
             "color": "#0284c7"
           },
           "stationIntro": "Soy Jimbei, un hombre-pez. Puedo nadar más rápido que nadie y controlar el agua. ¡Vamos a ver quién puede transportar más agua sin derramarla!",
-          "location": "Exterior (Césped)",
+          "location": "Parque",
           "objective": "Transportar la mayor cantidad de agua posible",
           "description": "Transportar agua de un cubo a otro usando esponjas gigantes.",
           "materials": [
-            "4 cubos (2 llenos, 2 vacíos)",
-            "2 esponjas grandes",
-            "Agua"
+            "1 cubos con agua",
+            "2 vasos vacíos",
+            "1 esponjas grandes"
           ],
           "steps": [
             {
@@ -731,9 +731,9 @@
       }
     ],
     "rotationTips": [
-      "Alternar equipos en estaciones para evitar esperas",
-      "Las actividades cooperativas (1, 6, 9, 11) pueden hacerse juntos",
-      "Las actividades individuales (2, 3, 4, 7) funcionan mejor en grupos pequeños"
+      "Sombrero de Paja: empieza en Salón (1-5), luego Parque (6-10)",
+      "Heart Pirates: empieza en Parque (10-6), luego Salón (5-1)",
+      "Ambas tripulaciones se encuentran en el Gran Final (11)"
     ]
   },
   "guestList": {

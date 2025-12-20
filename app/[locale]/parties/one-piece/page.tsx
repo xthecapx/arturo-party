@@ -42,8 +42,8 @@ export default async function OnePiecePartyPage({ params }: Props) {
     materials: locale === "es" ? "Materiales" : "Materials",
     guests: locale === "es" ? "Invitados" : "Guests",
     phases: locale === "es" ? "Fases de la Aventura" : "Adventure Phases",
-    strawHatRoute: locale === "es" ? "Ruta: 1→2→3→...→10→Final" : "Route: 1→2→3→...→10→Finale",
-    heartRoute: locale === "es" ? "Ruta: 10→9→8→...→1→Final" : "Route: 10→9→8→...→1→Finale",
+    strawHatRoute: locale === "es" ? "Salón (1-5) → Parque (6-10)" : "Living Room (1-5) → Park (6-10)",
+    heartRoute: locale === "es" ? "Parque (6-10) → Salón (1-5)" : "Park (6-10) → Living Room (1-5)",
   };
 
   return (
